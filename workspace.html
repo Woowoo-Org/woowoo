@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>woowoo</title>
+	<link rel="stylesheet" href="public/stylesheet/style.css" />
+	<script src="public/javascripts/jquery.min.js"></script>
+    <script src="public/javascripts/g2.js"></script>
+</head>
+<body>
+	<div class="header">
+		<h1 class="header-logo"><a href="workspace.html"><i class="icon-woowoo"></i>woowoo</a></h1>
+		<div class="header-toggle"><i class="material-icons">dehaze</i></div>
+		
+		<ul class="header-nav">
+		
+			<li>
+				<a href=""><i class="material-icons">search</i></a>
+			</li>
+			<li>
+				<a href=""><i class="material-icons">email</i></a>
+			</li>
+			<li>
+				<a href=""><i class="material-icons">message</i></a><sup>1</sup>
+			</li>
+			<li class="member">
+				<a href=""><img src="public/images/user.png" alt="" /></a>
+				
+				<div class="membercard">
+					<div class="img"><img src="public/images/user.png" /></div>
+					<div class="info">
+						<h2 class="name">JammyDodger‏</h2>
+						<p><i class="material-icons">location_on</i>Garissa referral hospital</p>
+						<p><i class="material-icons">business_center</i>internal medicine Doctor</p>
+					</div>
+					
+					<div class="bar">
+						<a href="Profile.html">Profile</a>
+						<a href="">Log out</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	
+	<div class="siderbar">
+		<ul class="siderbar-nav">
+			<li class="active"><a href=""><i class="material-icons">av_timer</i>dashboard <!-- 工作台 --></a></li>
+			<li><a href=""><i class="material-icons">assignment_ind</i>appointment<!-- 预约 --></a></li>
+			<li><a href=""><i class="material-icons">chrome_reader_mode</i>scheduling<!--排班--></a></li>
+			<li><a href=""><i class="material-icons">card_travel</i>erp<!--进销存--></a></li>
+			<li><a href=""><i class="material-icons">group</i>customer<!-- 客户 --></a></li>
+			<li><a href=""><i class="material-icons">business</i>business<!-- 业务设置 --></a></li>
+		</ul>
+	</div>
+	<div class="pagecont">
+		
+<!--
+		<div>
+			今日预约
+			到店列表
+		客户统计
+		我的当天排班情况
+		</div>
+-->
+		
+		
+		<div class="workspace">
+			<div class="workspace-siderbar">
+				<div class="appointment">
+					<h2 class="pagetitle">Taday Appointment </h2>
+					<div class="appointment">
+						<div class="appointment-item">
+							 <div class="time">8:00 <b>am</b></div>     
+							<h4>Mary Brose </h4>
+							<div class="info">
+								<div>internal medicine</div>
+								<div>
+									doctor:<span>Randall Arsenault‏</span>
+								</div>
+							</div>
+							<em class="tag">arrived</em>
+						</div>
+						
+						<div class="appointment-item">
+							 <div class="time">12:00<b>am</b></div>     
+							<h4>Corey Van Hoosen‏ </h4>
+							<em class="none">not arrive</em>
+						</div>
+						
+						<div class="appointment-item">
+							 <div class="time">13:00<b>pm</b></div>     
+							<h4>Vivek Ravin‏</h4>
+							<em class="done">done</em>
+						</div>
+						
+						<div class="appointment-item">
+							 <div class="time">13:30<b>pm</b></div>     
+							<h4>Mary Brose </h4>
+							<em class="none">not arrive</em>
+						</div>
+						<div class="appointment-item">
+							 <div class="time">14:00<b>pm</b></div>     
+							<h4>Mary Brose </h4>
+							<em class="none">not arrive</em>
+						</div>
+						<div class="appointment-item">
+							 <div class="time">15:00<b>pm</b></div>     
+							<h4>Mary Brose </h4>
+							<em class="none">not arrive</em>
+						</div>
+						<div class="appointment-item">
+							 <div class="time">16:00<b>pm</b></div>     
+							<h4>Mary Brose </h4>
+							<em class="none">not arrive</em>
+						</div>
+						<div class="appointment-item">
+							 <div class="time">16:30<b>pm</b></div>     
+							<h4>Mary Brose </h4>
+							<em class="none">not arrive</em>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="workspace-content">
+				<div class="workspace-title">
+			Good Morning,Rich Fulcher Doctor! <p class="time">2017-06-20 Wed</p>
+		
+		
+			<div class="col">
+				<div>all Appointment<b>19</b></div>
+				<div>done<b>24</b></div>
+				<div>unfinished<b>29</b></div>
+				
+			</div>
+		</div>
+				<div class="block">
+				<div class="pagetitle">
+					Patient statistics
+					<div class="pagetitle-sub">
+						2017-12-12 ~ 2017-12-40
+					</div>
+					
+					<div class="btngroup">
+						<a class="btn minbtn active">day</a>
+						<a class="btn minbtn">week</a>
+						<a class="btn minbtn">month</a>
+					</div>
+			
+				</div>
+				<div class="chart" id="c1" style="height:300px;">
+					
+				</div>
+				<script>
+			      var data = [
+			        {month: 'Jan', patients: 12},
+			        {month: 'Feb', patients: 22},
+			        {month: 'Mar', patients: 21},
+			        {month: 'Apr', patients: 14},
+			        {month: 'May', patients: 18},
+			        {month: 'Jun', patients: 51},
+			        {month: 'Jul', patients: 25},
+			        {month: 'Aug', patients: 26},
+			        {month: 'Sep', patients: 23},
+			        {month: 'Oct', patients: 18},
+			        {month: 'Nov', patients: 13},
+			        {month: 'Dec', patients: 6}
+			      ];
+			      var chart = new G2.Chart({
+			        id: 'c1',
+			        forceFit: true,
+			        height:300
+			      });
+			      chart.source(data, {
+			        month: {
+			          alias: 'day',
+			          range: [0, 1]
+			        },
+			        
+			      });
+			      chart.line().position('month*patients').size(2);
+			      chart.render();
+			    </script>
+			    
+			    
+				
+				<div class="pagetitle">
+					historical Appointment
+					
+				</div>
+				
+				<div class="mother">
+					
+					
+				</div>
+				<script>
+					var data = new Data();
+					
+				</script>
+				 
+    
+<!--
+				<table class="table table-line">
+					<tr>
+						<th>客户名称Name</th>
+						<th>预约时间Time</th>
+						<th>是否有病历</th>
+						<th>预约科室</th>
+						<th>预约医生</th>
+						<th>保险</th>
+						<th>操作</th>
+					</tr>
+					<tr>
+						<td>Mary</td>
+						<td>8:00</td>
+						<td>yes</td>
+						<td>chest surgery</td>
+						<td>Andrew Brooke</td>
+						<td>no</td>
+						<td>
+							<div class="table-tool">
+								<a href="" class="btn">编辑</a>
+								<a href="" class="btn">删除</a>
+								<a href="" class="btn">取消</a>
+								<a href="" class="btn">到店</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Mary</td>
+						<td>8:00</td>
+						<td>yes</td>
+						<td>chest surgery</td>
+						<td>Andrew Brooke</td>
+						<td>no</td>
+						<td>
+							<div class="table-tool">
+								<a href="" class="btn">编辑</a>
+								<a href="" class="btn">删除</a>
+								<a href="" class="btn">取消</a>
+								<a href="" class="btn">到店</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Mary</td>
+						<td>8:00</td>
+						<td>yes</td>
+						<td>chest surgery</td>
+						<td>Andrew Brooke</td>
+						<td>no</td>
+						<td>
+							<div class="table-tool">
+								<a href="" class="btn">编辑</a>
+								<a href="" class="btn">删除</a>
+								<a href="" class="btn">取消</a>
+								<a href="" class="btn">到店</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Mary</td>
+						<td>8:00</td>
+						<td>yes</td>
+						<td>chest surgery</td>
+						<td>Andrew Brooke</td>
+						<td>no</td>
+						<td>
+							<div class="table-tool">
+								<a href="" class="btn">编辑</a>
+								<a href="" class="btn">删除</a>
+								<a href="" class="btn">取消</a>
+								<a href="" class="btn">到店</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Mary</td>
+						<td>8:00</td>
+						<td>yes</td>
+						<td>chest surgery</td>
+						<td>Andrew Brooke</td>
+						<td>no</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Mary</td>
+						<td>8:00</td>
+						<td>yes</td>
+						<td>chest surgery</td>
+						<td>Andrew Brooke</td>
+						<td>no</td>
+						<td>
+							<div class="table-tool">
+								<a href="" class="btn">编辑</a>
+								<a href="" class="btn">删除</a>
+								<a href="" class="btn">取消</a>
+								<a href="" class="btn">到店</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+-->
+			</div>
+			</div>
+		</div>
+		
+		
+	</div>
+</body>
+</html>

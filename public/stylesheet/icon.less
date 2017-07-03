@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'woowoo';
+  src:
+    url('font/woowoo.ttf?yo0bpb') format('truetype'),
+    url('font/woowoo.woff?yo0bpb') format('woff'),
+    url('font/woowoo.svg?yo0bpb#woowoo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'woowoo' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-woowoo:before {
+  content: "\e900";
+  color: #fff;
+}
