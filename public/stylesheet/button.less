@@ -1,57 +1,35 @@
-.btn{
+.button{
 	background:lighten(@c4,68%);
 	color:@c4;
 	.inline-block();
 	padding:0 10px;
-	line-height:28px;
 	font-size:13px;
 	cursor:pointer;
 	vertical-align:top;
 	border:1px solid lighten(@c4,60%);
 	outline:none;
 	border-radius:2px;
+	vertical-align:bottom;
 	i{margin-right:4px;position:relative;top:1px;}
-}
-.minbtn{
-	font-size:12px;line-height:18px;padding:1px 6px;
-}
-.maxbtn{
-	font-size:16px;line-height:normal;padding:5px 14px 4px 14px;
-}
-.btn:hover{
-	background:lighten(@c4,64%);color:@c4;border:1px solid lighten(@c4,58%);
-	transition:0.2s;
-}
-
-.btn-dis{color:@c4;}
-.btn-dis:hover{background:lighten(@c4,62%);border:1px solid lighten(@c4,58%);color:@c4;}
-
-.btn-r{background:@red;color:#fff;border:1px solid darken(@red,4%);}
-.btn-r:hover{background:darken(@red,10%);border:1px solid darken(@red,22%);color:#fff;}
-
-
-/*
-.btn-g{background:@green;color:#fff;border:1px solid darken(@green,3%);}
-.btn-g:hover{background:darken(@green,6%);border:1px solid darken(@green,8%);color:#fff;}
-
-.btn-y{background:@yellow;color:#fff;border:1px solid darken(@yellow,8%);}
-.btn-y:hover{background:darken(@yellow,10%);border:1px solid darken(@yellow,22%);color:#fff;}
-
-.btn-b{background:@blue;color:#fff;border:1px solid darken(@blue,3%);}
-.btn-b:hover{background:darken(@blue,10%);border:1px solid darken(@blue,22%);color:#fff;}
-
-.btn-t{background:darken(@c4,32%);color:#fff;border:1px solid darken(@c4,40%);}
-.btn-t:hover{background:darken(@c4,22%);color:#fff;border:1px solid darken(@c4,30%);}
-*/
-
-.btngroup{
-	.inline-block();vertical-align:top;font-size:0;
-	.btn{margin-left:-1px;border-radius:0;position:relative;}
-	.btn:first-child{border-radius:2px 0 0 2px;}
-	.btn:last-child{border-radius:0 2px 2px 0;}
-	.active{
-		.btn-r();
-		z-index:8;
+	&:hover{
+		background:lighten(@c4,64%);color:@c4;border:1px solid lighten(@c4,58%);
+		transition:0.2s;
+	}
+	&-dis{color:@c4;
+		&:hover{background:lighten(@c4,62%);border:1px solid lighten(@c4,58%);color:@c4;}
+	}
+	
+	&-red{background:@red;color:#fff;border:1px solid darken(@red,4%);
+		hover{background:darken(@red,10%);border:1px solid darken(@red,22%);color:#fff;}
+	}
+	&-min{
+	font-size:12px;padding:0 8px;line-height:18px;
+	}
+	&-max{
+		font-size:16px;line-height:normal;padding:5px 14px 4px 14px;
 	}
 }
+
+
+
 .nohand{cursor:default;}

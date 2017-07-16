@@ -2,14 +2,66 @@ table{
 	border-collapse:collapse;width:100%;
 }
 .table{
+	td,th{
+		padding:10px 8px;line-height:normal;font-size:13px;
+	}
+	th{background:lighten(@ce,4%);text-align:left;color:@c2;font-weight:700;}
+	td{color:@c6;}
+	tr:nth-child(even){
+		
+	}
+	tr:nth-child(odd){
+		background:lighten(@ce,6%);
+	}
 	&-line{
 		width:100%;
 		th,td{text-align:left;}
 		th{background:@ce;padding:14px;font-weight:700;}
 		td{padding:12px;border-bottom:1px solid @ce;color:@c6;}
 	}
+	&-grid{}
 	&-tool{
+	}
+}
+
+
+.paged{
+	text-align:center;margin:20px 0;
+	a{
+		.inline-block();padding:6px 8px;background:lighten(@ce,4%);color:@c4;border:1px solid @ce;font-size:14px;margin-left:-1px;position:relative;
+		border-radius:2px;
+		&:hover{
+			border:1px solid @blue;color:@blue;z-index:10;
+		}
+		&.active{
+			background:@blue;color:#fff;z-index:10;
+			border-color:darken(@blue,6%);
+			&:hover{
+				color:#fff;
+				background:darken(@blue,10%);
+			}
+		}
+	}
+	&-number{
 		.inline-block();
-		a{padding:2px 6px;}
+	}
+	&-jump{
+		.inline-block();
+		input{
+			width:40px;border:1px solid @ce;outline:none;padding:5px 6px;
+			&:focus{
+				border:1px solid @cc;
+			}
+		}
+	}
+	&-of{
+		.inline-block();
+		
+	}
+	.next{
+		
+	}
+	.prev{
+		
 	}
 }
