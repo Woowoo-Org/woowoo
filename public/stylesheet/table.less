@@ -2,8 +2,39 @@ table{
 	border-collapse:collapse;width:100%;
 }
 .table{
+	th{
+		position:relative;
+	}
+	.store{
+		position:absolute;right:0;top:0;bottom:0;
+		.up,
+		.down{
+			
+			width:100%;
+			text-align:center;
+			cursor:pointer;
+			position:relative;
+			&:hover,&.active{
+				color:@red;font-size:14px;
+				
+			}
+		}
+		.up{
+			bottom:-5px;
+		}
+		.down{
+			top:-5px;
+		}
+	}
 	td,th{
-		padding:10px 8px;line-height:normal;font-size:13px;
+		padding:12px 8px;line-height:normal;font-size:13px;
+		background:#fff;
+		border-bottom:1px solid @ce;
+	}
+	tr:last-child{
+		td{
+			border:none;
+		}	
 	}
 	th{background:lighten(@ce,4%);text-align:left;color:@c2;font-weight:700;}
 	td{color:@c6;}
@@ -27,14 +58,21 @@ table{
 
 .paged{
 	text-align:center;margin:20px 0;
+	.paged-of{
+		vertical-align:top;
+		.selectbox{
+			width:50px;height:28px;
+		}
+	}
 	a{
 		.inline-block();padding:6px 8px;background:lighten(@ce,4%);color:@c4;border:1px solid @ce;font-size:14px;margin-left:-1px;position:relative;
+		vertical-align:top;
 		border-radius:2px;
 		&:hover{
 			border:1px solid @blue;color:@blue;z-index:10;
 		}
 		&.active{
-			background:@blue;color:#fff;z-index:10;
+			background:@blue;color:#fff;z-index:2;
 			border-color:darken(@blue,6%);
 			&:hover{
 				color:#fff;
@@ -44,14 +82,19 @@ table{
 	}
 	&-number{
 		.inline-block();
+		vertical-align:top;
 	}
 	&-jump{
-		.inline-block();
-		input{
-			width:40px;border:1px solid @ce;outline:none;padding:5px 6px;
+		.inline-block();font-size:0;
+		input[type='text']{
+			width:40px;border:1px solid @ce;outline:none;padding:6px 6px 5px;
 			&:focus{
 				border:1px solid @cc;
 			}
+		}
+		.button{
+			font-size:13px;padding:7px 5px 6px;
+			border-radius:0 2px 2px 0;
 		}
 	}
 	&-of{

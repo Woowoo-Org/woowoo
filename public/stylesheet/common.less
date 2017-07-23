@@ -1,9 +1,17 @@
 .normalize();.reset();
 
-html{background:#fff;font-size:12px;font-family:Roboto,sans-serif; }
-*{.box-sizing(border-box);}
+html{background:#fafafa;
+	font-size:12px;
+	font-family:Roboto,sans-serif; 
+}
+*{.box-sizing(border-box);
+	&:after,
+	&:before{
+		.box-sizing(border-box);
+	}
+}
 li{list-style:none;margin:0;padding:0;}
 a{text-decoration:none;color:@blue;}
 .anm(){
-	transitio:.5s;
+	.transition(.5s);
 }

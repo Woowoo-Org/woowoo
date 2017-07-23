@@ -2,13 +2,16 @@
 	&-input{
 		border:1px solid @ce;font-size:14px;
 	}
+	
 	&-select{
 		border:1px solid @ce;font-size:14px;
 		select{
 			outline:none;border:1px solid @ce;
 		}
 	}
-	&—radio,&-checkbox{
+	
+	&—radio,
+	&-checkbox{
 		position:relative;.inline-block();
 		input[type="radio"],input[type="checkbox"]{
 			display:none;visibility:hidden;
@@ -17,44 +20,179 @@
 			}
 		}
 	}
+	
+	&-radio,
+	&-checkbox,
+	&-switche{
+		position:relative;
+		padding-left:30px;
+		.inline-block();
+		input[type='radio'],
+		input[type='checkbox']{
+			position:absolute;
+			visibility:hidden;
+			width:0;
+			height:0;
+			opacity:0;
+		}
+		&+label{
+			font-size:13px;
+			display:block;
+		}
+	}
+	
 	&-radio{
 		input[type='radio']{
 			&+label{
-				&:after,&:before{display:block;content:'';position:absolute;border-radius:120px;}
-				&:after{width:4px;height:4px;border:3px solid @blue;background-color:@blue;opacity:0;left:5px;top:2px;background-color:@blue;
+				&:after,
+				&:before{
+					display:block;
+					content:'';
+					position:absolute;
+					border-radius:120px;
+					
 				}
-				&:before{display:block;width:16px;height:16px;left:0;top:50%;margin-top:-10px;background:#fff;border:2px solid @c3;
+				
+				&:after{
+					width:6px;
+					height:6px;
+					background-color:@red;
+					.anm();
+					.transform(scale(0));
+					left:5px;
+					top:50%;
+					.opacity(0);
+					margin-top:-3px;
+					background-color:@red;
+				}
+				
+				&:before{
+					display:block;
+					width:16px;
+					height:16px;
+					left:0;
+					top:50%;
+					margin-top:-8px;
+					background:#fff;
+					border:2px solid @c3;
 				}
 			}
+			
 			&:checked{
 				&+label{
-					&:after{opacity:1;}
-					&:before{border-color:@blue; background:#ef2b03;}
+					&:after{
+						opacity:1;
+						.transform(scale(1));
+					}
+					&:before{
+						border-color:@red;
+						background:#fff;
+					}
 				}
 			}
 		}
 	}
+	
+	&-switche{
+		padding-left:42px;
+		input[type='checkbox']{
+			&+label{
+				cursor:pointer;
+				font-size:12px;
+				color:@c3;
+				&:after,
+				&:before{
+					display:block;
+					content:'';
+					position:absolute;
+					.anm();
+				}
+				&:after{
+					width:18px;
+					height:18px;
+					margin-top:-9px;
+					top:50%;
+					left:0;
+					position:absolute;
+					background:#fff;
+					
+					border-radius:90px;
+					
+					box-shadow:0px 1px 6px rgba(0, 0, 0, 0.2);
+				}
+				&:before{
+					display:block;
+					width:32px;
+					height:12px;
+					border-radius:20px;
+					left:0;
+					top:50%;
+					margin-top:-6px;
+					background:#fff;
+					background:#999;
+					
+				}
+			}
+			
+			&:checked{
+				&+label{
+					&:after{
+						left:14px;
+						background:@red;
+					}
+					
+					&:before{
+						background:lighten(@red,32%);
+					}
+				}
+			}
+		}
+	}
+	
 	&-checkbox{
 		input[type='checkbox']{
-			display:none;visibility:hidden;
 			&+label{
 				cursor:pointer;font-size:12px;color:@c3;
 				&:after,&:before{display:block;content:'';position:absolute;.anm();}
-				&:after{width:4px;height:10px;border:2px solid @blue;.transform(rotate(45deg),scale(0),translateX(-100%));border-top:none;border-left:none;
-					position:absolute;left:6px;margin-top:-8px;top:50%;
+				&:after{
+					width:5px;
+					height:12px;
+					border:2px solid @red;
+					.transform(rotate(45deg));
+					border-top:none;
+					border-left:none;
+					position:absolute;
+					left:6px;
+					margin-top:-7px;
+					top:50%;
+					.opacity(0);
 				}
-				&:before{display:block;width:14px;height:14px;left:0;top:50%;margin-top:-9px;background:#fff;
-					border-radius:2px;border:2px solid @c4;
+				&:before{
+					display:block;
+					width:16px;
+					height:16px;
+					left:0;
+					top:50%;
+					margin-top:-8px;
+					background:#fff;
+					border-radius:2px;
+					border:2px solid @c4;
+					
 				}
 			}
 			&:checked{
 				&+label{
-					&:after{.transform(rotate(45deg),scale(1),rotateX(0),translateX(0));border-color:#fff;}
-					&:before{background:@blue;border-color:@blue;}
+					&:after{
+						.transform(rotate(45deg),scale(1));
+						border-color:#fff;
+						.opacity(1);
+					}
+					&:before{background:@red;border-color:@red;}
 				}
 			}
 		}
 	}
+	
 }
 
 

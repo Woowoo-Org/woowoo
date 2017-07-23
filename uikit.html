@@ -55,13 +55,24 @@
 		</ul>
 	</div>
 	<div class="pagecont">
+		<div class="search-box">
+			<div class="searchform">
+				<input type="text" placeholder="search" /><a href="" class="button button-red">Search</a>
+			</div>
+		</div>
 		<div class="workspace">
 			<table class="table">
 				<tr>
-					<th>patient</th>
+					<th>patient<div class="store">
+						<div class="up active"><i class="material-icons">arrow_drop_up</i></div>
+						<div class="down"><i class="material-icons">arrow_drop_down</i></div>
+					</div></th>
 					<th>time</th>
 					<th>case</th>
-					<th>Departments</th>
+					<th><div class="store">
+						<div class="up active"><i class="material-icons">arrow_drop_up</i></div>
+						<div class="down"><i class="material-icons">arrow_drop_down</i></div>
+					</div>Departments </th>
 					<th>Doctor</th>
 					<th>insurance</th>
 					<th width="250">options</th>
@@ -221,7 +232,9 @@
 					<a href="">5</a>
 				</div>
 				<a href="" class="next">next</a>
+				
 				<div class="paged-of">
+					
 					<div class="selectbox">
 						<select name="" id="">
 							<option value="">1</option>
@@ -232,43 +245,103 @@
 						</select>
 					</div>
 				</div>
+				
 				<div class="paged-jump">
 					<input type="text" />
-					<a href="">go</a>
+					<a href="" class="button btn-blue">go</a>
 				</div>
 			</div>
 			
 			
 			<div class="formlist">
+				<div class="formlist-title">
+					Form Title
+					<div class="formlist-title-sub">
+						By providing this information, patients will be able to find you by looking for specific spoken language or dialect.
+					</div>
+				</div>
+				<fieldset>
+				
 				<div class="fgroup">
-					<i>tag：</i>
-					<input type="text" />
+					<i>name</i>
+					<input type="text" placeholder="please input file" />
+					<div class="error">Please fill in the correct value</div>
+				</div>
+				<div class="formtitle">providing this information</div>
+				<div class="fgroup">
+					<i>Password</i>
+					<input type="text" placeholder="please input file" />
 				</div>
 				<div class="fgroup">
-					<i>tag：</i>
+					<i>Specialties as Registered with the Medical Council of Hong Kong</i>
+					<input type="text" placeholder="please input file" />
+				</div>
+				<div class="fgroup">
+					<i>Contact Information</i>
 					<div class="ui-radio">
-						<input type="radio" id="radio1" /><label for="radio1">radio1</label>
+						<input type="radio" name="s1" id="radio1" /><label for="radio1">radio1</label>
 					</div>
 					<div class="ui-radio">
-						<input type="radio" id="radio2" /><label for="radio2">this radio2</label>
+						<input type="radio" name="s1" id="radio2" /><label for="radio2">this radio2</label>
 					</div>
 					<div class="ui-radio">
-						<input type="radio" id="radio3" /><label for="radio3">this radio3</label>
+						<input type="radio" name="s1" id="radio3" /><label for="radio3">this radio3</label>
 					</div>
 				</div>
 				
 				<div class="fgroup">
-					<i>tag：</i>
+					<i>Name of Specialty</i>
+					<div class="selectbox">
+						<select name="" id="">
+							<option value="">Choose one</option>
+							<option value="">Mobile Phone</option>
+							<option value="">Secured Fax No.</option>
+						</select>
+					</div>
+				</div>
+				
+				<div class="fgroup">
+					<i>checkbox</i>
 					<div class="ui-checkbox">
 						<input type="checkbox" id="checkbox1" /><label for="checkbox1">checkbox</label>
 					</div>
 				</div>
 				
 				<div class="fgroup">
-					<i>tag：</i>
+					<i>switche-left</i>
+					<div class="ui-switche">
+						<input type="checkbox" id="checkbox4" /><label for="checkbox4">switches</label>
+					</div>
+				</div>
+				<div class="formtitle">providing this information</div>
+				<div class="fgroup">
+					
+					<div class="fgroup-block">
+						<div class="ui-switche">
+							<input type="checkbox" id="checkbox4" /><label for="checkbox4">switches</label>
+						</div>
+						<div class="ui-switche">
+							<input type="checkbox" id="checkbox4" /><label for="checkbox4">switches</label>
+						</div>
+						<div class="ui-switche">
+							<input type="checkbox" id="checkbox4" /><label for="checkbox4">switches</label>
+						</div>
+					</div>
+				</div>
+				
+				<div class="fgroup">
+					<i>tag</i>
 					<input type="text" placeholder="inset some thing" />
 				</div>
+				</fieldset>
+				<div class="formlist-bar">
+					<a href="" class="button button-red">OK,Complete the Form</a>
+					<a href="" class="button">I don't want to write it, cancel it</a>
+				</div>
 			</div>
+			
+			
+			
 		</div>
 	</div>
 </body>

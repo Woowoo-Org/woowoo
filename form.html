@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8" /> 
+  <title>Form.validationEngine</title> 
+  <link rel="stylesheet" href="public/stylesheet/style.css" /> 
+ </head> 
+ <body> 
+  <div class="pagecont">
+	  
+	 <div class="tab">
+		 <a href="" class="active">Notifications</a>
+		 <a href="">Practice Location</a>
+		 <a href="">Clinical Service and Fee</a>
+	 </div> 
+	 <div class="settab">
+		<a href="" class="active">Holidays</a>
+		 <a href="">Appointment</a>
+		 <a href="">Office Hours</a>
+	 </div>
+	 
+	 
+   <h2 class="formlist-title"> Form.validationEngine 
+    <div class="formlist-title-sub">
+     The document address：http://code.ciaoca.com/jquery/validation-engine/
+    </div> </h2> 
+   <div class="formlist"> 
+    <form id="user_form" class="form" method="post"> 
+	     <h2 class="formtitle">Account information
+		     
+		     <span class="formtitle-sub">Receive mobile updates by regular SMS text message.</span>
+	     </h2> 
+     <fieldset> 
+     
+      <div class="fgroup"> 
+       <i>username</i>
+       <input class="input validate[required]" type="text" placeholder="input USNAME" />
+      </div> 
+      <div class="fgroup"> 
+       <i>password</i>
+       <input class="input validate[required,minSize[6],maxSize[20]]" type="password" id="pwd" /> 
+      </div> 
+      <div class="fgroup"> 
+       <i>Confirm password</i>
+       <input class="input validate[condRequired[pwd],equals[pwd]]" type="password" />
+      </div> 
+     </fieldset> 
+     
+     <h2 class="formtitle">Personal information</h2> 
+     <fieldset> 
+      
+      <div class="fgroup"> 
+       <i>name</i>
+       <input class="input validate[required,custom[chinese],minSize[2]]" type="text" id="name" />
+      </div> 
+      <div class="fgroup"> 
+       <i>Date of birth</i>
+       <input class="input validate[required,custom[date]]" type="text" />
+      </div> 
+      <div class="fgroup"> 
+       <i>Mobile phone number</i>
+       <input class="input validate[required,custom[phone]]" type="text" />
+      </div> 
+      <div class="fgroup"> 
+       <i>Id card number</i>
+       <input class="input validate[required,custom[chinaId]]" type="text" />
+      </div> 
+      <div class="fgroup"> 
+       <i>QQ</i>
+       <input class="input validate[required,custom[qq]]" type="text" />
+      </div> 
+      <div class="fgroup"> 
+       <i>E-mail</i>
+       <input class="input validate[required,custom[email]]" type="text" />
+      </div> 
+      <div class="fgroup"> 
+       <i>Website/blog</i>
+       <input class="input validate[required,custom[url]]" type="text" />
+      </div>
+      <h2 class="formtitle">Account information</h2> 
+	   
+      <div class="fgroup">
+	      <div class="fgroup-block">
+	       	 <div class="ui-radio"> 
+	       	 <input type="radio" name="s1" id="radio1" /><label for="radio1">radio1
+	       	  <div class="subtitle">Feature updates and more</div>
+	       	 </label> 
+	       	
+	       	</div> 
+	       	
+	       	<div class="ui-radio"> 
+	       	 <input type="radio" name="s1" id="radio2" />
+	       	 <label for="radio2">this radio2<div class="subtitle">Feature updates and more</div>
+	       	 </label> 
+	       	</div> 
+	       	
+	       	<div class="ui-radio"> 
+	       	 <input type="radio" name="s1" id="radio3" />
+	       	 <label for="radio3">this radio3<div class="subtitle">Changes made to your account</div></label> 
+	       	</div>
+	       </div> 
+      </div>
+      
+      <h2 class="formtitle">Medical Services Available in Clinic</h2> 
+	   
+      <div class="fgroup">
+	      <div class="fgroup-block">
+	      	<div class="ui-switche">
+	      			      <input type="checkbox" id="bs" />
+	      				<label for="bs">Blood Test</label>		      
+	      	</div>
+	      	
+	      	<div class="ui-switche">
+	      			      <input type="checkbox" id="bs1" />
+	      				<label for="bs1">Urinalysis</label>		      
+	      	</div>
+	      </div>
+	      
+      </div>
+      
+      <h2 class="formtitle">Medical Services Available in Clinic</h2> 
+	   
+      <div class="fgroup">
+	      <div class="fgroup-block">
+	      	<div class="ui-checkbox">
+	      			      <input type="checkbox" id="bsa" />
+	      				<label for="bsa">Blood Test</label>		      
+	      	</div>
+	      	
+	      	<div class="ui-checkbox">
+	      			      <input type="checkbox" id="bs1r" />
+	      				<label for="bs1r">Urinalysis</label>		      
+	      	</div>
+	      	
+	      	<div class="ui-checkbox">
+	      			      <input type="checkbox" id="bs1z" />
+	      				<label for="bs1z">Urinalysis</label>		      
+	      	</div>
+	      	
+	      	
+	      </div>
+	      
+      </div>
+      
+      
+       <h2 class="formtitle">Medical Services Available in Clinic</h2> 
+	   
+      <div class="fgroup">
+	      <div class="fgroup-block">
+	      	<div class="ui-checkbox">
+				<input type="checkbox" id="bsax" />
+				<label for="bsax">Blood Test<div class="subtitle">In order to provide following information </div>
+				</label>		      
+	      	</div>
+	      	<div class="ui-checkbox">
+				<input type="checkbox" id="bs1rt" />
+				<label for="bs1rt">Urinalysis
+					<div class="subtitle">adequate training and use nomenclat</div>
+				</label>		      
+	      	</div>
+	      	<div class="ui-checkbox">
+				<input type="checkbox" id="bs1zb" />
+				<label for="bs1zb">Urinalysis
+					<div class="subtitle">By providing this information,</div>
+				</label>		      
+	      	</div>
+	      </div>
+      </div>
+      
+      
+     </fieldset> 
+     <fieldset> 
+      <h2 class="formtitle">Recipient information</h2> 
+      <div class="fgroup"> 
+       <i>In the area</i> 
+       <div class="selectbox"> 
+        <select class="select validate[required]"> <option value="">Choose</option> <option value="option1">Chinese</option> <option value="option2">USA</option> </select> 
+       </div> 
+      </div>
+      
+       <div class="fgroup"> 
+	       <div class="fgroup-inline">
+		       	<i>province</i>
+		       
+			   	<div class="selectbox">
+				   	<select name="" id="">
+					   	<option value="">province</option>
+				   	</select>
+			   	</div>
+	       </div>
+	       
+	       <div class="fgroup-inline">
+		       	<i>The city</i>
+		       <div class="selectbox">
+				   	<select name="" id="">
+					   	<option value="">city</option>
+				   	</select>
+			   	</div>
+	       </div>
+	       
+	       <div class="fgroup-inline">
+		       	<i>The county</i>
+		       	<div class="selectbox">
+				   	<select name="" id="">
+					   	<option value="">county</option>
+				   	</select>
+			   	</div>
+	       </div>
+      </div> 
+      
+      
+      <div class="fgroup"> 
+       <i>The street address</i>
+       <input class="input validate[required,minSize[10]]" type="text" />
+      </div> 
+      <div class="fgroup"> 
+	       <div class="fgroup-inline">
+		       	<i>Appointment Automatic Post</i>
+		       	<input class="input validate[required,custom[chinaZip]]" type="text" />
+	       </div>
+	       
+	       <div class="fgroup-inline">
+		       	<i>Number of Patients</i>
+		       	<input class="input validate[required,custom[chinaZip]]" type="text" />
+	       </div>
+	       
+	       <div class="fgroup-inline">
+		       	<i>Number of Patients</i>
+		       	<input class="input validate[required,custom[chinaZip]]" type="text" />
+	       </div>
+      </div> 
+      <div class="fgroup"> 
+       <i>Contact Information(Normal-radio item)</i> 
+       <div class="ui-radio"> 
+        <input type="radio" name="s2" id="radioq" />
+        <label for="radioq">Urinalysis</label> 
+       </div> 
+       <div class="ui-radio"> 
+        <input type="radio" name="s2" id="radiob" />
+        <label for="radiob">Blood Test</label> 
+       </div> 
+       <div class="ui-radio"> 
+        <input type="radio" name="s2" id="radiom" />
+        <label for="radiom">Feature updates and more
+</label> 
+       </div> 
+      </div> 
+     </fieldset> 
+     <fieldset> 
+      <h2 class="formtitle">Other</h2> 
+      
+      <div class="fgroup"> 
+       <i>upfile</i> 
+       <div class="upfilebox">
+	       <input type="text" placeholder="Verification code" />
+	       	<input id="upfile" class="input validate[required,ajax[ajaxVerify]]" type="file" style="width:100px;" data-prompt-position="centerRight:100,0" /> 
+	       	<label class="button button-blue" for="upfile">view file</label>
+       </div>
+       
+       <a class="button">UPFILE</a>
+    
+      </div>
+      
+      
+      <div class="fgroup"> 
+       <i>Verification code</i> 
+       <input class="input validate[required,ajax[ajaxVerify]]" type="text" style="width:100px;" data-prompt-position="centerRight:100,0" /> 
+       <span class="code"><img src="http://www.kuaishouyin.cn/51club/manage/verifyCode.in" alt="" width="90" height="30" /></span> 
+      </div> 
+      <div class="fgroup"> 
+       <div class="ui-checkbox">
+	       	<input class="radio validate[required]" type="checkbox" id="agree" name="agree" data-prompt-position="centerRight:80,0" /> 
+	       	<label for="agree">Consent to user agreement</label>
+       </div>
+      </div> 
+     </fieldset> 
+     <div class="formlist-bar">
+	     <input class="button button-red" type="submit" value="验证 &amp; 提交表单" />
+	      </div>
+    </form> 
+   </div> 
+  </div> 
+  <script type="text/javascript" src="public/javascripts/jquery.min.js"></script> 
+  <script type="text/javascript" src="public/javascripts/validate/jquery.validationEngine-zh_CN.js"></script> 
+  <script type="text/javascript" src="public/javascripts/validate/jquery.validationEngine.min.js"></script> 
+  <script>
+
+jQuery(document).ready(function(){
+  // binds form submission and fields to the validation engine
+  jQuery('#user_form').validationEngine({ 
+    scroll: false,
+    //binded: false,
+   //showArrow: false,
+    promptPosition: 'centerRight',
+    maxErrorsPerField: 1,
+    showOneMessage: true,
+    addPromptClass: 'formError-noArrow formError-text',
+    custom_error_messages: {
+      '#pwd': {
+        'minSize': {
+          'message': '* 密码不得少于 6 位，建议使用英文与数字组合'
+        }
+      }
+    }
+  });
+});
+</script>   
+ </body>
+</html>
