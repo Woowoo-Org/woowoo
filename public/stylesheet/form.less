@@ -16,12 +16,58 @@ textarea{
 	box-sizing:border-box;
 	line-height:normal;
 	height:30px;
+	border-radius:2px;
 	&:focus{
 		border:1px solid @c8;
 	}
 }
-.search-box{
-	margin:20px 0;
+.search{
+	&-box{
+	margin:20px 0 10px;
+	position:relative;
+	}
+	&-advanced{
+		background:#fff;
+		border:1px solid @ce;
+		padding:10px 20px;
+		margin-bottom:20px;
+	}
+	&-colform{
+		.fgroup{
+			.inline-block();
+			margin-bottom:10px;
+			margin-right:20px;
+			vertical-align:top;
+			width:300px;
+			input[type='text'],.selectbox{
+				width:100%;
+			}
+			&-date{
+				input[type='text']{
+					padding-right:30px;
+				}
+				b{
+				position:absolute;right:0;
+				width:30px;
+				text-align:center;
+				top:0;
+				line-height:30px;
+				}
+			}
+		}
+	}
+	&-bar{
+		.inline-block();
+		vertical-align: top;
+		margin-left:10px;
+		.search-colform{
+			
+			.fgroup{
+			margin-right:10px;width:160px;
+			
+			}
+		}
+	}
 }
 .searchform {
 	.inline-block();font-size:0;
@@ -43,20 +89,14 @@ textarea{
 		padding:0;
 		text-align:center;
 		i{
+			position:absolute;
 			margin-right:0;
 			left:50%;
 			margin-left:-10px;
 		}
 	}
 }
-.search{
-	&-box{
-		position:relative;
-	}
-}
-.search-form{
-	
-}
+
 
 textarea{
 	line-height:1.6;
@@ -176,6 +216,14 @@ textarea{
 .fgroup{
 	position:relative;
 	margin-bottom:25px;
+	&-date{
+		b{
+		.inline-block();
+		line-height:30px;
+		margin-left:-30px;
+		color:@c9;
+		}
+	}
 	label{
 		margin-right:10px;
 		cursor:pointer;
@@ -224,16 +272,18 @@ textarea{
 			display:block;
 			height:auto;
 			margin:30px 0;
-			&+label{
+			input+label{
 				margin:0;
 				padding:0;
+				font-size:14px;
 			}
 		}
 		.subtitle{
 			line-height:normal;
 			display:block;
-			margin-top:12px;
+			margin-top:8px;
 			color:@c9;
+			font-size:12px;
 		}
 	}
 }
