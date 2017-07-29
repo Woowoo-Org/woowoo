@@ -10,24 +10,31 @@
 	outline:none;
 	border-radius:2px;
 	vertical-align:bottom;
+	position:relative;
 	.transition-duration(.5s);
-	i{margin-right:4px;position:relative;top:1px;}
+	
+	i{
+		margin-right:4px;
+		position:absolute;
+		vertical-align:middle;
+	}
+	
 	&:hover{
 		background:lighten(@c4,64%);color:@c4;border:1px solid lighten(@c4,58%);
 		transition:0.2s;
 	}
-	&-dis{color:@c4;
-		&:hover{background:lighten(@c4,62%);border:1px solid lighten(@c4,58%);color:@c4;}
-	}
-	
-	&-red{background:@red;color:#fff;border:1px solid darken(@red,4%);
-		hover{background:darken(@red,10%);border:1px solid darken(@red,22%);color:#fff;}
-	}
-	&-min{
-	font-size:12px;padding:0 8px;line-height:18px;
-	}
-	&-max{
-		font-size:16px;line-height:normal;padding:5px 14px 4px 14px;
+
+	&.disable{
+		border:1px solid @ce;
+		color:@c9;
+		background:lighten(@ce,6%);
+		cursor:not-allowed;
+		&:hover{
+			cursor: default;
+			border:1px solid @ce;
+			color:@c9;
+			background:lighten(@ce,6%);
+		}
 	}
 	
 	&-red{
@@ -40,6 +47,16 @@
 			color:#fff;
 			
 		}
+		&.disable{
+			background:lighten(@red,40%);
+			border:1px solid lighten(@red,32%);
+			color:lighten(@red,20%);
+			&:hover{
+				background:lighten(@red,40%);
+				border:1px solid lighten(@red,32%);
+				color:lighten(@red,20%);
+			}
+		}
 	}
 	&-blue{
 		background:@blue;
@@ -50,7 +67,29 @@
 			border:1px solid darken(@blue,12%);
 			color:#fff;
 		}
+		&.disable{
+			background:lighten(@blue,36%);
+			border:1px solid lighten(@blue,30%);
+			color:lighten(@blue,20%);
+			&:hover{
+				background:lighten(@blue,36%);
+				border:1px solid lighten(@blue,30%);
+				color:lighten(@blue,20%);
+			}
+		}
 	}
+	
+	&-min{
+		padding:4px 10px;
+		font-size:12px;
+	}
+	
+	&-max{
+		padding:8px 24px;
+		font-size:14px;
+	}
+	
+	
 }
 
 
