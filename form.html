@@ -7,7 +7,6 @@
  </head> 
  <body> 
   <div class="pagecont">
-	  
 	 <div class="tab">
 		 <a href="" class="active">Notifications</a>
 		 <a href="">Practice Location</a>
@@ -30,7 +29,7 @@
 		     
 		     <span class="formtitle-sub">Receive mobile updates by regular SMS text message.</span>
 	     </h2> 
-     <fieldset> 
+    
      
       <div class="fgroup"> 
        <i>username</i>
@@ -46,7 +45,7 @@
        <i>Confirm password</i>
        <input class="input validate[condRequired[pwd],equals[pwd]]" type="password" />
       </div> 
-     </fieldset> 
+  
      
      <h2 class="formtitle">Personal information</h2> 
      <fieldset> 
@@ -292,10 +291,10 @@ jQuery(document).ready(function(){
   jQuery('#user_form').validationEngine({ 
     scroll: false,
     //binded: false,
-   //showArrow: false,
+   showArrow: true,
     promptPosition: 'centerRight',
     maxErrorsPerField: 1,
-    showOneMessage: true,
+    showOneMessage:false,
     addPromptClass: 'formError-noArrow formError-text',
     custom_error_messages: {
       '#pwd': {
