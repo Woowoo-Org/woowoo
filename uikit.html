@@ -392,26 +392,21 @@
 			</div>
 		</div>
 	</div>
-	  <script type="text/javascript" src="public/javascripts/jquery.min.js"></script> 
+	  <script type="text/javascript" src="/public/javascripts/jquery.min.js"></script> 
 	  <script>
-		  var menuStat = false;
-// 		  $('.siderbar a').css({'font-size':'0'});
-	  	$('#togglePage').on('click',function(e){
-		  	$('html').toggleClass('siderbar-open');
-		  	$(this).toggleClass('open');
-/*
-		  	if(!$(this).hasClass('open')){
-			  
-			  		$('.siderbar a').css({'font-size':'0'});
-			  	
-		  	}else{
-			  	setTimeout( function(){
-				  	$('.siderbar a').css({'font-size':'13px'});
-			  	} ,200)
-			  	
-		  	}
-*/
-	  	});
+		  var storage = window.localStorage; 
+		  var menuStat = storage.getItem('MENUSTAT') || true;
+		  	$('#togglePage').on('click',function(e){
+			  	if(menuStat){
+					$('html').addClass('siderbar-open');
+					$(this).addClass('open');
+					storage.setItem('MENUSTAT','false');
+			  	}else{
+				  	$('html').removeClass('siderbar-open');
+					$(this).removeClass('open');
+					storage.setItem('MENUSTAT','true');
+			  	}
+		  	});
 	  </script>
 </body>
 </html>

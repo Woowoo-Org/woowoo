@@ -6,14 +6,15 @@ input[type='password'],
 textarea{
 	border:1px solid darken(@ce,5%);
 	outline:none;
-	padding:8px 4px 7px;
-	font-size:13px;
+	padding:6px 4px;
 	color:@c4;
 	.placeholder(@c2);
 	.appearance(none);
 	.placeholder(@c9);
 	margin:0;
 	.transition-duration(.5s);
+	box-sizing:border-box;
+	line-height:normal;
 	&:focus{
 		border:1px solid @c8;
 	}
@@ -23,7 +24,10 @@ textarea{
 }
 .searchform {
 	.inline-block();font-size:0;
-	input[type='text']{width:240px;font-size:13px;.anm();
+	input[type='text']{
+		width:240px;
+		.anm();
+		font-size:12px;
 		&:focus{border:1px solid @red;}
 	}
 	
@@ -42,6 +46,11 @@ textarea{
 			left:50%;
 			margin-left:-10px;
 		}
+	}
+}
+.search{
+	&-box{
+		position:relative;
 	}
 }
 .search-form{
