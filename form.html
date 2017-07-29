@@ -6,7 +6,60 @@
   <link rel="stylesheet" href="public/stylesheet/style.css" /> 
  </head> 
  <body> 
+	
+	 <div class="header">
+		<h1 class="header-logo"><a href="workspace.html"><i class="icon-woowoo"></i>woowoo</a></h1>
+		<div class="header-toggle" id="togglePage"><i class="material-icons">dehaze</i></div>
+		
+		<ul class="header-nav">
+			<li>
+				<a href=""><i class="material-icons">search</i></a>
+			</li>
+			<li>
+				<a href=""><i class="material-icons">email</i></a>
+			</li>
+			<li>
+				<a href=""><i class="material-icons">message</i></a><sup>1</sup>
+			</li>
+			<li class="member">
+				<a href=""><img src="public/images/user.png" alt="" /></a>
+				
+				<div class="membercard">
+					<div class="img"><img src="public/images/user.png" /></div>
+					<div class="info">
+						<h2 class="name">JammyDodger‏</h2>
+						<p><i class="material-icons">location_on</i>Garissa referral hospital</p>
+						<p><i class="material-icons">business_center</i>internal medicine Doctor</p>
+					</div>
+					
+					<div class="bar">
+						<a href="Profile.html">Profile</a>
+						<a href="">Log out</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	
+	<div class="siderbar">
+		<ul class="siderbar-nav">
+			<li id="index_li" class="active"><a href=" "><i class="material-icons">av_timer</i>Dashboard <!-- 工作台 --></a ></li>
+			<li id="reserve_li"><a href="/reserveindex.html"><i class="material-icons">assignment_ind</i>reservation<!-- 预约 --></a ></li>
+			<li><a href=""><i class="material-icons">group</i>Patient<!-- 客户 --></a ></li>
+			<li id="doctor_li"><a href="/doctorindex.html"><i class="material-icons">person_pin</i>Doctors<!--医生--></a ></li>
+			<li id="patient_li"><a href="/patientindex.html"><i class="material-icons">chrome_reader_mode</i>Scheduling<!--排班--></a ></li>
+			<li id="doctor_li"><a href="/doctorindex.html"><i class="material-icons">card_travel</i>ERP<!--进销存--></a ></li>
+			<li id="base_li"><a href="/basesetting.html"><i class="material-icons">settings</i>Base Setting<!-- 业务设置 --></a ></li>
+		</ul>
+	</div>
   <div class="pagecont">
+	  
+	   <div class="pagecont-siderbar">
+		 <div id="tree1"></div>
+	 </div>
+	 <div class="pagecont-content">
+	 
 	 <div class="tab">
 		 <a href="" class="active">Notifications</a>
 		 <a href="">Practice Location</a>
@@ -281,10 +334,13 @@
 	      </div>
     </form> 
    </div> 
+   </div>
   </div> 
   <script type="text/javascript" src="public/javascripts/jquery.min.js"></script> 
   <script type="text/javascript" src="public/javascripts/validate/jquery.validationEngine-zh_CN.js"></script> 
   <script type="text/javascript" src="public/javascripts/validate/jquery.validationEngine.min.js"></script> 
+  <script type="text/javascript" src="public/javascripts/tree.jquery.js"></script> 
+   <script type="text/javascript" src="public/javascripts/data.js"></script> 
   <script>
 
 jQuery(document).ready(function(){
@@ -305,6 +361,37 @@ jQuery(document).ready(function(){
       }
     }
   });
+
+
+		var $tree = $('#tree1');
+		$tree.tree({
+		    data: ExampleData.example_data,
+		    autoOpen: true
+		});
+		$tree.on(
+		    'tree.click',
+		    function(e) {
+		        // Disable single selection
+		        e.preventDefault();
+		
+		        var selected_node = e.node;
+		
+		        if (selected_node.id == undefined) {
+		            console.log('The multiple selection functions require that nodes have an id');
+		        }
+		
+		        if ($tree.tree('isNodeSelected', selected_node)) {
+		            $tree.tree('removeFromSelection', selected_node);
+		        }
+		        else {
+		            $tree.tree('addToSelection', selected_node);
+		        }
+		    }
+		);
+
+
+	 
+	 
 });
 </script>   
  </body>
