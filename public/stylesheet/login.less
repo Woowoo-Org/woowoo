@@ -1,0 +1,76 @@
+
+.login{
+	&-box{
+		width:300px;
+		margin:6% auto 0;
+		
+		
+		&>div{
+			margin:20px 0;
+		}
+		input{
+			width:100%;
+		}
+		
+		
+	}
+	&-form{
+		&>div{
+			margin:12px 0 20px;
+			position:relative;padding:14px 0 0 0;
+			.button{
+				width:100%;
+				text-align:center;
+			}
+			
+		}
+		input{
+			border:none;
+			border-bottom:1px solid @ce;
+			background:transparent;
+			border-radius:0;
+			font-size:16px;
+			padding:14px 0;
+			
+			&:focus{
+				border:none;
+				border-bottom:1px solid @red;
+			}
+		}
+		i{
+			position:absolute;
+			left:0;
+			top:0;
+			color:@c9;
+			animation:sliderup .5s both;
+		}
+	}
+	&-logo{
+		margin:0 0 50px;
+		color:@red;
+		font-size:0;
+		text-align:center;
+		i{
+			font-size:70px;
+		}
+	}
+	
+	
+	
+}
+.copyright{
+	text-align:center;
+	font-size:12px;
+	color:@ce;
+	margin-top:200px;
+	font-weight:200;
+}
+
+@keyframes sliderup{
+	0%{
+		.transform(translateY(100%));
+	}
+	100%{
+		.transform(translateY(0));
+	}
+}

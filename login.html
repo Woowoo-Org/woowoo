@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="wbg">
+<head>
+	<meta charset="UTF-8" />
+	<title>woowoo_uikit</title>
+	<link rel="stylesheet" href="public/stylesheet/style.css" />
+	
+</head>
+<body>
+	<div class="login-box">
+		<h1 class="login-logo"><i class="icon-woowoo"></i>woowoo</h1>
+		<div class="login-form">
+			<div>
+				<input type="text" class="focus-input" placeholder="username" />
+			</div>
+			<div>
+				<input type="password" class="focus-input" placeholder="password" />
+			</div>
+			<div>
+				<a class="button button-red button-max">Login in</a>
+			</div>
+		</div>
+		
+		<div class="copyright">
+			wooteach.com©2017
+		</div>
+	</div>
+	<script src="public/javascripts/jquery.min.js"></script>
+	  <script>
+
+			  $('.focus-input').focus(function(e){
+				  
+				var label = $(this).attr('placeholder');
+				if( $(this).val() == ''){
+					$(this).attr('placeholder','');
+					$(this).parent().append('<i>'+label+'</i>');
+				}
+				 
+			  });
+			  
+			   $('.focus-input').blur(function(e){
+				  if( $(this).val() == ''){
+					  $(this).attr('placeholder',$(this).siblings('i').text());
+					  $(this).siblings('i').remove(); 
+				  }
+			   });
+		
+	  </script>
+</body>
+</html>
