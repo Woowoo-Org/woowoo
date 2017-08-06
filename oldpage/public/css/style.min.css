@@ -1,0 +1,20 @@
+@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(fonts/MaterialIcons-Regular.eot);src:local('Material Icons'),local('MaterialIcons-Regular'),url(fonts/MaterialIcons-Regular.woff2) format('woff2'),url(fonts/MaterialIcons-Regular.woff) format('woff'),url(fonts/MaterialIcons-Regular.ttf) format('truetype')}
+.material-icons{font-family:'Material Icons';font-weight:400;font-style:normal;font-size:24px;display:inline-block;width:1em;height:1em;line-height:1;text-transform:none;letter-spacing:normal;word-wrap:normal;white-space:nowrap;direction:ltr;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;-moz-osx-font-smoothing:grayscale;font-feature-settings:'liga'}
+a,abbr,acronym,address,applet,big,blockquote,body,caption,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,form,h1,h2,h3,h4,h5,h6,html,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,ul,var{padding:0;margin:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-family:inherit;font-size:100%;vertical-align:baseline}
+body{line-height:1}
+ol,ul{list-style:none}
+table{border-collapse:separate;border-spacing:0;vertical-align:middle}
+caption,td,th{text-align:left;font-weight:400;vertical-align:middle}
+a img{border:none}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block;padding:0;margin:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-family:inherit;font-size:100%;vertical-align:baseline}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+[hidden],audio:not([controls]){display:none}
+html{background:url(../images/background.svg) no-repeat 0 0;background-size:cover;color:#bdbdbd}
+ul{margin:0;padding:0}
+ul li{list-style:none}
+.siderbar{width:50px;position:fixed;left:0;top:0;bottom:0}
+.siderbar li{text-align:center}
+.siderbar a{color:#bdbdbd;display:block;line-height:50px}
+.content_siderbar{width:250px;box-shadow:3px 0 9px rgba(0,0,0,.3);position:fixed;left:50px;top:0;bottom:0}
+.content_box{height:100%}
+header{width:100%;position:fixed;top:0;right:0;bottom:0;left:0;height:50px}

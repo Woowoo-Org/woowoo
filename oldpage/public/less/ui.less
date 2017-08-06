@@ -1,0 +1,108 @@
+/*formUi  zhangyanping*/
+
+.btn{.inline-block();padding:10px 30px;background:@blue;color:#fff;font-size:13px;
+	.anm();cursor:pointer;border-radius:2px;
+	&:hover{background:darken(@blue,6%);}
+}
+.checkUi{
+	position:relative;.inline-block();cursor:pointer;padding-left:50px;
+	input[type='checkbox']{
+		display:none;visibility:hidden;
+		&+label{
+			cursor:pointer;line-height:14px;margin:0;font-size:12px;color:@ctxt4;
+			&:after,&:before{display:block;content:'';position:absolute;.anm();}
+			&:after{width:20px;height:20px;background:@cborder;border-radius:40px;position:absolute;left:-4px;top:50%;margin-top:-10px;box-shadow:0px 1px 4px rgba(0, 0, 0, 0.2);}
+			&:before{display:block;width:34px;height:14px;border-radius:40px;left:0;top:50%;margin-top:-7px;background:#C6C5C5;}
+		}
+		&:checked{
+			&+label{
+				&:after{left:16px;background:@blue;}
+				&:before{background:lighten(@blue,26%);}
+			}
+		}
+	}
+}
+
+
+.checkBoxUi{
+	position:relative;.inline-block();cursor:pointer;padding-left:40px;
+	input[type='checkbox']{
+		display:none;visibility:hidden;
+		&+label{
+			cursor:pointer;font-size:12px;color:@ctxt4;
+			&:after,&:before{display:block;content:'';position:absolute;.anm();}
+			&:after{width:4px;height:10px;border:2px solid @blue;.transform(rotate(45deg),scale(0),translateX(-100%));border-top:none;border-left:none;
+				position:absolute;left:6px;margin-top:-8px;top:50%;
+			}
+			&:before{display:block;width:14px;height:14px;left:0;top:50%;margin-top:-9px;background:#fff;
+				border-radius:2px;border:2px solid @bg3;
+			}
+		}
+		&:checked{
+			&+label{
+				&:after{.transform(rotate(45deg),scale(1),rotateX(0),translateX(0));border-color:#fff;}
+				&:before{background:@blue;border-color:@blue;}
+			}
+		}
+	}	
+}
+
+.radioUi{
+	position:relative;.inline-block();cursor:pointer;padding-left:40px;
+	input[type='radio']{
+		display:none;visibility:hidden;
+		&+label{
+			cursor:pointer;font-size:12px;color:@ctxt4;
+			&:after,&:before{display:block;content:'';position:absolute;.anm();border-radius:120px;}
+			&:after{width:4px;height:4px;border:3px solid @blue;opacity:0;left:5px;top:2px;
+			}
+			&:before{display:block;width:16px;height:16px;left:0;top:50%;margin-top:-10px;background:#fff;border:2px solid @bg3;
+			}
+		}
+		&:checked{
+			&+label{
+				&:after{opacity:1;border-color:@blue;}
+				&:before{border-color:@blue;}
+			}
+		}
+	}
+}
+
+.blackUi{
+	input[type='checkbox']{
+		&+label{
+			&:after{}
+			&:before{border-color:@black;}
+		}
+		&:checked{
+			&+label{
+				&:after{.transform(rotate(45deg),scale(1),rotateX(0),translateX(0));border-color:#fff;}
+				&:before{background:@black;border-color:@black;}
+			}
+		}
+	}
+}
+
+table{
+	border-collapse:collapse;
+}
+.noborderTable{
+	width:100%;
+	td,th{padding:10px;font-size:12px;color:@ctxt7;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

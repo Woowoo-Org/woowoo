@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'wooico';
+  src:
+    url('fonts/wooico.ttf?i6d8tf') format('truetype'),
+    url('fonts/wooico.woff?i6d8tf') format('woff'),
+    url('fonts/wooico.svg?i6d8tf#wooico') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'wooico' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-doctor:before {
+  content: "\e900";
+}
+.ico-addp:before {
+  content: "\e901";
+}
+.ico-referral:before {
+  content: "\e902";
+}
+

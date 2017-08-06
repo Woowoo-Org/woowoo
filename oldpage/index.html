@@ -1,0 +1,803 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Home</title>
+	<link rel="stylesheet" href="public/stylesheets/doc/style.css" />
+</head>
+<body>
+	<div class="header">
+		<div class="headLeftTool">
+			<a><i class="material-icons">note_add</i></a>
+			<a><i class="material-icons">person_add</i></a>
+		</div>
+		
+		<div class="headSelect">Chong Wong Yip</div>
+		<div class="dateToolBar">
+			<div class="btnBar dateSwith">
+				<a class="prev"><i class="material-icons">navigate_before</i></a>
+				<a class="taday active">Today</a>
+				<a class="next"><i class="material-icons">navigate_next</i></a>
+			</div>
+			<div class="btnBar chooseDate">
+				<a class="day active">Day</a>
+				<a class="week">Week</a>
+				<a class="month">Month</a>
+			</div>
+		</div>
+		<div class="headTool">
+			<a class="search" id="searchTo"><i class="material-icons">search</i></a>
+			<a class="woowoo"><i class="material-icons">pets</i></a>
+			<a class="reminder" id="toReminder"><i class="material-icons">notifications</i></a>
+			<a class="mail" href="mail.html"><i class="material-icons">markunread</i></a>
+			<a>ChongW.yan</a>
+			<a class="chat" id="messageWindow"><i class="material-icons">message</i></a>
+		</div>
+	</div>
+	<div class="siderBar">
+		<ul class="nav">
+			<li>
+				<a href="index.html" title="Home"><i class="material-icons">home</i></a>
+			</li>
+			<li class="active">
+				<a href="Calender.html" title="Calender"><i class="material-icons">event_note</i></a>
+			</li>
+			<li>
+				<a href="Employee.html" title="Employee"><i class="material-icons">assignment_ind</i></a>
+			</li>
+			<li>
+				<a href="Patients.html" title="Patients"><i class="material-icons">people</i></a>
+			</li>
+			<li>
+				<a href="DraftRecords.html" title="DraftRecords"><i class="material-icons">description</i></a>
+			</li>
+			<li>
+				<a href="Settings.html" title="Settings"><i class="material-icons">settings</i></a>
+			</li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="contentSiderbar">
+			<div class="siderHead">
+				<a><i class="material-icons">date_range</i></a>
+			</div>
+			<div class="todoList">
+				<div class="todoHead">Dec 8th   <span class="day">Friday</span> <a class="reminder"><i class="material-icons">announcement</i></a></div>
+				<dl>
+					<dd>
+						<i class="material-icons">fiber_manual_record</i>
+						<h2>Chong Wong Yip</h2>
+						<p>Make sure you check the list i sent you earlier</p>
+						<small class="doTime">20m</small>
+					</dd>
+					<dt>
+						<a href=""></a>
+						<a href=""></a>
+					</dt>
+				</dl>
+				
+				<dl>
+					<dd class="active">
+						<i class="material-icons">fiber_manual_record</i>
+						<h2>Chong Wong Yip</h2>
+						<p>Make sure you check the list i sent you earlier</p>
+						<small class="doTime">20m</small>
+					</dd>
+				</dl>
+				
+			</div>
+		</div>
+		<div class="contentBox">
+			<!-- date -->
+			<div class="dateBox">
+				<div class="dayCont">
+					<div class="dayList">
+						<div class="dayPanel">
+						<div class="panelCont">
+							<div class="block head">
+								<div class="userimg">
+									<img src="public/images/userimg.png" alt="" />
+								</div>
+								<p>Chung Sze Yuen</p>
+								<p>Male 28</p>
+							</div>
+							<div class="block">
+								<i class="material-icons">schedule</i>
+								<p>10:15 AM</p>
+								<p>March 12, 2015</p>
+								<br />
+								<p>Dermatology Consultation</p>
+								<p>With Dr. Chong Wong Yip</p>
+							</div>
+							<div class="block">
+								<i class="material-icons">credit_card</i>
+								<p>EHR ID:  1987-9934-3456-01</p>
+							</div>
+							<div class="block">
+								<i class="material-icons">credit_card</i>
+								<p>AIA HK General Health insurance</p>
+								<br />
+								<p>Insured: Chung Sze Yuen</p>
+								<p>Member ID : 12344567</p>
+								<p>Group Number/Name: D2973120</p>
+								<p>Policy #:2760192-21</p>
+								<p>SR ID#: 281729</p>
+								<br />
+								<p>Copays: RX- $50 Tear 1; $100  Tear 2 outpatient Physicians Visit & Consiltatants -$50</p>
+								<!--
+<p>RX Bin: 1862</p>
+								<p>RX PNC: 12876</p>
+								<p>RX Group: JRQIN21</p>
+-->
+							</div>
+							<div class="block">
+								<i class="material-icons">credit_card</i>
+								<h3>Chief Complaint</h3>
+								<p>Stomach does’t feel right, having hard time to poop. My right eye gets red and itch for days.</p>
+							</div>
+						</div>
+						<div class="panelSider">
+							<a class="active">Check in</a>
+							<a>New Record</a>
+							<a>Cancel Appointment</a>
+							<a>Email</a>
+							<a>Add Appointment</a>
+							<a>Revisit Setup</a>
+							<a>Referral</a>
+						</div>
+					</div>
+						<div class="dayPanel visible">
+						<div class="panelCont">
+							<div class="block head">
+								<div class="userimg">
+									<img src="public/images/userimg.png" alt="" />
+								</div>
+								<p>Chung Sze Yuen</p>
+								<p>Male 28</p>
+							</div>
+							<div class="block">
+								<i class="material-icons">schedule</i>
+								<p>10:15 AM</p>
+								<p>March 12, 2015</p>
+								<br />
+								<p>Dermatology Consultation</p>
+								<p>With Dr. Chong Wong Yip</p>
+							</div>
+							<div class="block">
+								<i class="material-icons">credit_card</i>
+								<p>EHR ID:  1987-9934-3456-01</p>
+							</div>
+							<div class="block">
+								<i class="material-icons">credit_card</i>
+								<p>AIA HK General Health insurance</p>
+								<br />
+								<p>Insured: Chung Sze Yuen</p>
+								<p>Member ID : 12344567</p>
+								<p>Group Number/Name: D2973120</p>
+								<p>Policy #:2760192-21</p>
+								<p>SR ID#: 281729</p>
+								<br />
+								<p>Copays: RX- $50 Tear 1; $100  Tear 2 outpatient Physicians Visit & Consiltatants -$50</p>
+								<p>RX Bin: 1862</p>
+								<p>RX PNC: 12876</p>
+								<p>RX Group: JRQIN21</p>
+							</div>
+							<div class="block">
+								<i class="material-icons">credit_card</i>
+								<h3>Chief Complaint</h3>
+								<p>Stomach does’t feel right, having hard time to poop. My right eye gets red and itch for days.</p>
+							</div>
+						</div>
+						<div class="panelSider">
+							<a class="active">Check in</a>
+							<a>New Record</a>
+							<a>Cancel Appointment</a>
+							<a>Email</a>
+							<a>Add Appointment</a>
+							<a>Revisit Setup</a>
+							<a>Referral</a>
+						</div>
+					</div>
+					</div>
+					<div class="weekline weekActive">
+							<a class="weekblock">
+								<span>10:00 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock s now">
+								<span>11:15 am</span>
+								<span>Mingxia Fu</span>
+								<i class="material-icons">check</i>
+							</a>
+							<a class="weekblock">
+								<span>11:30 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock s">
+								<span>12:00 am</span>
+							</a>
+							<a class="weekblock s none">
+								<span>1:00 pm</span>
+								
+							</a>
+							<a class="weekblock">
+								<span>1:15 pm</span>
+								<span>Mingxia Fu</span>
+								
+							</a>
+							<a class="weekblock s">
+								<span>1:30 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock">
+								<span>2:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>2:15 pm</span>
+								
+							</a>
+							<a class="weekblock s none">
+								<span>2:30 pm</span>
+								
+							</a>
+							<a class="weekblock">
+								<span>3:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>3:15 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+						</div>
+				</div>
+				<div class="weekCont" style="display:none">
+					<div class="weekBar">
+						<a class="prev"><i class="material-icons">navigate_before</i></a>
+							<div class="weekSrcoll">
+								<a class="active"><span>Sun</span>7</a>
+								<a><span>Mon</span>8</a>
+								<a><span>The</span>9</a>
+								<a><span>Wed</span>10</a>
+								<a><span>Thu</span>11</a>
+								<a><span>Fri</span>12</a>
+								<a><span>Sat</span>13</a>
+							</div>
+						<a class="next"><i class="material-icons">navigate_next</i></a>
+					</div>
+					<div class="weekContent">
+						<div class="weekline weekActive">
+							<a class="weekblock">
+								<span>10:00 am</span>
+								<span>Mingxia Fu</span>
+								<i class="material-icons">check</i>
+							</a>
+							<a class="weekblock s done">
+								<span>11:15 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock">
+								<span>11:30 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock s now">
+								<span>12:00 am</span>
+								<span>Mingxia Fu</span>
+								<i class="material-icons">check</i>
+							</a>
+							<a class="weekblock s">
+								<span>1:00 pm</span>
+								<span>Mingxia Fu</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>1:15 pm</span>
+								
+							</a>
+							<a class="weekblock s none">
+								<span>1:30 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>2:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>2:15 pm</span>
+								
+							</a>
+							<a class="weekblock s none">
+								<span>2:30 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>3:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>3:15 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+						</div>
+						
+						<div class="weekline">
+							<a class="weekblock">
+								<span>10:00 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock s">
+								<span>11:15 am</span>
+							</a>
+							<a class="weekblock">
+								<span>11:30 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock s">
+								<span>12:00 am</span>
+							</a>
+							<a class="weekblock s none">
+								<span>1:00 pm</span>
+								
+							</a>
+							<a class="weekblock">
+								<span>1:15 pm</span>
+								<span>Mingxia Fu</span>
+								
+							</a>
+							<a class="weekblock s">
+								<span>1:30 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock">
+								<span>2:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>2:15 pm</span>
+								
+							</a>
+							<a class="weekblock s none">
+								<span>2:30 pm</span>
+								
+							</a>
+							<a class="weekblock">
+								<span>3:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>3:15 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+						</div>
+						<div class="weekline">
+							<a class="weekblock none">
+								<span>10:00 am</span>
+							</a>
+							<a class="weekblock s">
+								<span>11:15 am</span>
+							</a>
+							<a class="weekblock">
+								<span>11:30 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock s">
+								<span>12:00 am</span>
+							</a>
+							<a class="weekblock s">
+								<span>1:00 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock">
+								<span>1:15 pm</span>
+								<span>Mingxia Fu</span>
+								
+							</a>
+							<a class="weekblock s">
+								<span>1:30 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock">
+								<span>2:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>2:15 pm</span>
+								
+							</a>
+							<a class="weekblock s none">
+								<span>2:30 pm</span>
+								
+							</a>
+							<a class="weekblock">
+								<span>3:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>3:15 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+						</div>
+						<div class="weekline">
+							<a class="weekblock">
+								<span>10:00 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock s">
+								<span>11:15 am</span>
+							</a>
+							<a class="weekblock">
+								<span>11:30 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock s">
+								<span>12:00 am</span>
+							</a>
+							<a class="weekblock s none">
+								<span>1:00 pm</span>
+								
+							</a>
+							<a class="weekblock">
+								<span>1:15 pm</span>
+								<span>Mingxia Fu</span>
+								
+							</a>
+							<a class="weekblock s">
+								<span>1:30 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock">
+								<span>2:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>2:15 pm</span>
+								
+							</a>
+							<a class="weekblock s none">
+								<span>2:30 pm</span>
+								
+							</a>
+							<a class="weekblock">
+								<span>3:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>3:15 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+						</div>
+						<div class="weekline">
+							<a class="weekblock">
+								<span>10:00 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock s">
+								<span>11:15 am</span>
+							</a>
+							<a class="weekblock">
+								<span>11:30 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock s">
+								<span>12:00 am</span>
+							</a>
+							<a class="weekblock s none">
+								<span>1:00 pm</span>
+								
+							</a>
+							<a class="weekblock">
+								<span>1:15 pm</span>
+								<span>Mingxia Fu</span>
+								
+							</a>
+							<a class="weekblock s">
+								<span>1:30 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock">
+								<span>2:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>2:15 pm</span>
+								
+							</a>
+							<a class="weekblock s none">
+								<span>2:30 pm</span>
+								
+							</a>
+							<a class="weekblock">
+								<span>3:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>3:15 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+						</div>
+						<div class="weekline">
+							<a class="weekblock none">
+								<span>10:00 am</span>
+							</a>
+							<a class="weekblock s">
+								<span>11:15 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock none">
+								<span>11:30 am</span>
+							</a>
+							<a class="weekblock s">
+								<span>12:00 am</span>
+							</a>
+							<a class="weekblock s none">
+								<span>1:00 pm</span>
+								
+							</a>
+							<a class="weekblock">
+								<span>1:15 pm</span>
+								<span>Mingxia Fu</span>
+								
+							</a>
+							<a class="weekblock s">
+								<span>1:30 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock">
+								<span>2:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>2:15 pm</span>
+								
+							</a>
+							<a class="weekblock s none">
+								<span>2:30 pm</span>
+								
+							</a>
+							<a class="weekblock">
+								<span>3:00 pm</span>
+								
+							</a>
+							<a class="weekblock">
+								<span>3:15 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+						</div>
+						<div class="weekline">
+							<a class="weekblock">
+								<span>10:00 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock s">
+								<span>11:15 am</span>
+							</a>
+							<a class="weekblock">
+								<span>11:30 am</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock s none">
+								<span>12:00 am</span>
+							</a>
+							<a class="weekblock s">
+								<span>1:00 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock">
+								<span>1:15 pm</span>
+								<span>Mingxia Fu</span>
+								
+							</a>
+							<a class="weekblock s">
+								<span>1:30 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+							<a class="weekblock">
+								<span>2:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>2:15 pm</span>
+								
+							</a>
+							<a class="weekblock s none">
+								<span>2:30 pm</span>
+								
+							</a>
+							<a class="weekblock">
+								<span>3:00 pm</span>
+								
+							</a>
+							<a class="weekblock none">
+								<span>3:15 pm</span>
+								<span>Mingxia Fu</span>
+							</a>
+						</div>
+						
+						
+					</div>
+				</div>
+				<div class="monthCont" style="display:none">
+					 <div class="calendarBox">
+					  	 <div class="monthHead">
+					  		<h1 colspan="5" class="month-name">December 2016</h1>
+					  		<div class="navBar">
+					  			<a class="prev"><i class="material-icons">navigate_before</i></a>
+					  			<a class="next"><i class="material-icons">navigate_next</i></a>
+					  		</div>
+					  	</div>
+					  	<table class="monthTable">
+					  	  <thead>
+					  	      <tr class="week-name">
+					  	          <th>Sun</th>
+					  	          <th>Mon</th>
+					  	          <th>The</th>
+					  	          <th>Wed</th>
+					  	          <th>Thu</th>
+					  	          <th>Fri</th>
+					  	          <th>Sat</th>
+					  	      </tr>
+					  	  </thead>
+					  	  <tbody>
+					  	      <tr>
+					  	          <td>
+					  	              <div time="1469943197701" title="" class="day lastMonth  valid ">31</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1470029597701" title="" class="day toMonth  valid ">1</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1470115997701" title="" class="day toMonth  valid ">2</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1470202397701" title="" class="day toMonth  valid ">3</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1470288797701" title="" class="day toMonth  valid ">4</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1470375197701" title="" class="day toMonth  valid ">5</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1470461597701" title="" class="day toMonth  valid ">6</div>
+					  	          </td>
+					  	      </tr>
+					  	      <tr>
+					  	          <td>
+					  	              <div time="1470547997701" title="" class="day toMonth  valid ">7</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1470634397701" title="" class="day toMonth  valid ">8</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1470720797701" title="" class="day toMonth  valid ">9</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1470807197701" title="" class="day toMonth  valid ">10</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1470893597701" title="" class="day toMonth  valid ">11</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1470979997701" title="" class="day toMonth  valid ">12</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1471066397701" title="" class="day toMonth  valid ">13</div>
+					  	          </td>
+					  	      </tr>
+					  	      <tr>
+					  	          <td>
+					  	              <div time="1471152797701" title="" class="day toMonth  valid ">14</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1471239197701" title="" class="day toMonth  valid ">15</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1471325597701" title="" class="day toMonth  valid ">16</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1471411997701" title="" class="day toMonth  valid ">17</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1471498397701" title="" class="day toMonth  valid ">18</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1471584797701" title="" class="day toMonth  valid ">19</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1471671197701" title="" class="day toMonth  valid ">20</div>
+					  	          </td>
+					  	      </tr>
+					  	      <tr>
+					  	          <td>
+					  	              <div time="1471757597701" title="" class="day toMonth  valid ">21</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1471843997701" title="" class="day toMonth  valid ">22
+						  	              
+						  	              <i class="material-icons">fiber_manual_record</i>
+					  	              </div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1471930397701" title="" class="day toMonth  valid ">23
+						  	              
+						  	              <i class="material-icons">fiber_manual_record</i>
+					  	              </div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1472016797701" title="" class="day toMonth  valid ">24
+						  	              
+						  	              <i class="material-icons">fiber_manual_record</i>
+					  	              </div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1472103197701" title="" class="day toMonth  valid ">25</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1472189597701" title="" class="day toMonth  valid ">26</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1472275997701" title="" class="day toMonth  valid ">27</div>
+					  	          </td>
+					  	      </tr>
+					  	      <tr>
+					  	          <td>
+					  	              <div time="1472362397701" title="" class="day toMonth  valid real-today">28</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1472448797701" title="" class="day toMonth  valid ">29</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1472535197701" title="" class="day toMonth  valid ">30</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1472621597701" title="" class="day toMonth  valid ">31</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1472707997701" title="" class="day nextMonth  valid ">1</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1472794397701" title="" class="day nextMonth  valid ">2</div>
+					  	          </td>
+					  	          <td>
+					  	              <div time="1472880797701" title="" class="day nextMonth  valid ">3</div>
+					  	          </td>
+					  	      </tr>
+					  	  </tbody>
+					  	</table>
+					  </div>
+					  
+					  <div class="monthSet">
+						  <div class="setSider">
+							  <a>
+								  <b>Saturday     24/12/2016</b>
+							  	<span>Christmas Eve</span>
+							  </a>
+							  <a>
+								  <b>Saturday     24/12/2016</b>
+							  	<span>Christmas Eve</span>
+							  </a>
+							  <a>
+								  <b>Saturday     24/12/2016</b>
+							  	<span>Christmas Eve</span>
+							  </a>
+						  </div>
+					  </div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<div class="searchPage" id="searchPage">
+		<div class="searchHead">
+			<div class="searForm">
+				<input type="text" class="searchInput" id="searchInput" /><a class="searchBtn"><i class="material-icons">search</i></a>
+				<span>Enter your search above</span>
+			</div>
+			
+			<a class="closeSearch"><i class="material-icons">clear</i></a>
+		</div>
+	</div>
+	<script src="public/javascripts/jquery.min.js"></script>
+	<script src="public/javascripts/index.js"></script>
+</body>
+</html>

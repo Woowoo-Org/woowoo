@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="1080px" viewBox="0 0 1440 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>bacground</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="51.63998%" cy="51.3565514%" fx="51.63998%" fy="51.3565514%" r="86.4929495%" id="radialGradient-1">
+            <stop stop-color="#092137" offset="0%"></stop>
+            <stop stop-color="#071C2E" offset="61.930255%"></stop>
+            <stop stop-color="#040E17" offset="85.8380845%"></stop>
+            <stop stop-color="#020100" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Back-ground" fill="url(#radialGradient-1)">
+            <g id="Group-18">
+                <polygon id="bacground" points="0 250.89028 0 0 1440 0 1440 1080 0 1080"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

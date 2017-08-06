@@ -1,0 +1,351 @@
+<div class="mailWindow window">
+	<div class="mailHead">
+		<h1 class="title">New Message</h1>
+		<div class="windowBar">
+			<a class="minBtn" id="minWindow" title="Minimize"><i class="material-icons">remove</i></a>
+			<a class="zoomBtn" id="zoomWindow"><i class="material-icons">zoom_out_map</i></a>
+			<a class="closeBtn" id="closeWindow" title="Close"><i class="material-icons">clear</i></a>
+			<a class="openWindow" style="display:none"><i class="material-icons">open_in_browser</i></a>
+		</div>
+	</div>
+	<div id="windowContent" class="windowContainer">
+	<div class="sendMailContacts">
+		<div class="line toContacts">
+			<label for="">to</label>
+			<div class="inputWarp">
+				<input placeholder="type" id="inBoxUser" type="text" name="" value="">
+				<div class="autoUser" style="display:none">
+					<p>"Amber Brown"<span><'Amber@woowoo.com'></span></p>
+					<p>"Peter Browns"<span><'PeterBrowns@woowoo.com'></span></p>
+					<p>"Json Brown"<span><'Json@woowoo.com'></span></p>
+					<p>"Amber Brown"<span><'Amber@woowoo.com'></span></p>
+					<p>"Peter Browns"<span><'PeterBrowns@woowoo.com'></span></p>
+					<p>"Json Brown"<span><'Json@woowoo.com'></span></p>
+				</div>
+			</div>
+			
+		</div>
+		<div class="line mailTitle">
+			<div class="inputWarp">
+				<input type="text"  placeholder="typeTitle" />
+			</div>
+		</div>
+	</div>
+	<div class="sendMailContent" >
+		<div class="textareaWarp">
+			<pre class="editMail" id="editPre" style="" contenteditable="true">Type soming</pre>
+<!-- 			<textarea name="" id="editMail" class="editMail" style="background:#ecc5c5" rows="" cols="" placeholder="Type some"></textarea> -->
+		</div>
+		
+		
+		<div class="healthPanel">
+			<a class="deleteEvent" title="Delete Event"><i class="material-icons">clear</i></a>
+					<div class="panelTime">
+						<h1>OTC<span>27</span></h1>
+						<p><span>thur</span><span>2016</span>
+						</p>
+					</div>
+					<h3>
+					
+					<a>AlleyBoost: HealthTech Panel</a>
+					</h3>
+					
+					<ul class="healthPanelInfo">
+						<li>
+						<i class="material-icons">access_time</i>
+						<span>Thur Oct 27, 2016 6:30am – 8:30am (HKT)</span>
+						</li>
+						
+						<li>
+						<i class="material-icons">place</i>
+						<a>WorkVille NYC 1412 Broadway New York NY 10018</a>
+						</li>
+						
+						<li class="person"><i class="material-icons">person</i><p class="name">Craig Hopkins</p></li>
+						<li>
+						<i class="material-icons">content_paste</i>
+						<b>Ticket Link:</b>
+						<b>https://www.wikiwand.com/en/Health_care</b>
+						</li>
+						
+						<li>
+						<i class="material-icons">image</i>
+						<div class="imageLists">
+							<a><img src="public/images/userimg.png" alt="" /></a>
+							<a><img src="public/images/userimg.png" alt="" /></a>
+							<a><img src="public/images/userimg.png" alt="" /></a>
+							<a><img src="public/images/userimg.png" alt="" /></a>
+							<a><img src="public/images/userimg.png" alt="" /></a>
+							<a><img src="public/images/userimg.png" alt="" /></a>
+						</div>
+						</li>
+					</ul>
+					
+					<a class="addCalender">Add to Calender >></a>	
+		</div>
+	</div>
+	</div>
+	
+	<div class="sendMailBar windowBottomBar">
+		
+		<a href="" class="sendBTN" title="Send">
+			<i class="material-icons">send</i>
+		</a>
+		<div class="sendTool">
+			<div class="ico">
+				<a href="" title="Attached File (Insert Link)"><i class="material-icons">attachment</i></a>
+			</div>
+			<div class="ico" id="addBtn">
+				<a title="Add"><i class="material-icons">add</i></a>
+				<div class="addBox dropMenu" id="addBox">
+				<a id="addEvent">Add Event</a>
+				<a id="addAppointment">Add Appointment</a>
+			</div>
+			</div>
+			<div class="ico">
+				<a href="" title="Referrals"><i class="ico-referral"></i></a>
+			</div>
+			<div class="ico">
+				<a id="templatesBtn" title="Templates"><i class="material-icons">web</i></a>
+			</div>
+			<div class="ico">
+				<a id="addLinkBtn" title="Add Link"><i class="material-icons">link</i></a>
+			</div>
+			
+			
+		</div>
+		<a href="" class="deleteBtn" class="Delete"><i class="material-icons">delete</i></a>
+	</div>
+</div>
+
+
+
+
+<!-- add Event-->
+<div id="addEventPanel" style="display:none">
+	<div class="addEvent">
+		<div class="line eventTitle">
+			<input type="text" placeholder="Title of event" />
+		</div>
+		<div class="line eventTime">
+			<i class="material-icons">access_time</i>
+			<div class="formTime"><label for="">form</label><div>
+				<input type="text" value="Thur Oct 27, 2016 6:30pm (HKT) " />
+			</div>
+			</div>
+			<div class="toTime"><label for="">to</label><div>
+				<input type="text" value="Thur Oct 27, 2016 8:30pm (HKT)" />
+			</div>
+			</div>
+		</div>
+		<div class="line eventLoacl">
+			<i class="material-icons">place</i>
+			<input type="text" value="WorkVille NYC 1412 Broadway New York NY 10018" />
+		</div>
+		<div class="line eventPerson">
+			<i class="material-icons">person</i>
+			<input type="text" value="Craig Hopkins" />
+		</div>
+		<div class="line eventNotes">
+			<i class="material-icons">content_paste</i>
+			<div class="textareaWrap">
+				<textarea name="" rows="6" cols="12" placeholder="Enter Notes"></textarea>
+			</div>
+		</div>
+		<div class="line eventNotes">
+			<i class="material-icons">link</i>
+		</div>
+	</div>
+</div>
+
+<div id="mailTemplates" style="display:none">
+	<div class="templateSider">
+		<h1 class="title">Message Templates</h1>
+		<div class="templatNav">
+			<a class="active">We Missed You</a>
+			<a>Lab notification from your doctor’s office</a>
+			<a>Time for Annual Check</a>
+			<a>We haven’t heard from you for awhile</a>
+		</div>
+	</div>
+	<div class="tempLateCont">
+		<div class="tmpCont">
+			<p>Hello (Patient Name),</p>
+			<p>We missed you at our office today! We understand things happen and would love to reschedule your appointment very soon. I just left you a voicemail to inquire about rescheduling and wanted to follow up with an email as well, in the event you are unable to call back.</p>
+			<p>Please feel free to respind directly to this email or cell our office at 9879-2231 or click this link below to reschedule your appointment.</p>
+			<p><a href="">https://www.woowoodoc.com/doctor/Chong-Wan-Yip-M09693_LocIdent=9235=-1</a></p>
+			<p>Thank you for being one of our valued patients and we look forward to hearing from you soon!</p>
+			<p>Best,</p>
+			<p>Your Sign Here</p>
+		</div>
+	</div>
+</div>
+
+<div id="mailLink" style="display:none;">
+	<div class="editLink">
+		<div class="textLine">
+			<label for="">Text to display</label>
+			<div class="linkInput">
+				<input type="text" placeholder="Link here" />
+			</div>
+		</div>
+		<div class="linkLine">
+			<h2>Link to</h2>
+			<div>
+				<div class="radioUi"><input type="radio" name="links" id="ras" checked /><label for="ras">Web address</label></div>
+				<input type="text" placeholder="Enter the URL of this link" />
+			</div>
+			<div>
+				<div class="radioUi"><input type="radio" name="links" id="rus" /><label for="rus">Email address</label></div>
+				<input type="text" placeholder="Enter email address" />
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script>
+	//add Event
+	$('#addEvent').on('click',function(){
+		base.panel({
+			title:'add Event',
+			content:$('#addEventPanel').html(),
+			before:function(){
+				console.log('before');//载入前回调
+			},
+			after:function(){
+				console.log('after');//关闭后回调
+			},
+			ok:function(){
+				console.log('submitBack');//提交后回调
+			},
+			btnTxt:'Add Event'
+		});
+	});
+	
+	//add Appointment
+	$('#addAppointment').on('click',function(){
+		
+	});
+	
+	//mail templates
+	$('#templatesBtn').on('click',function(){
+		base.panel({
+			content:$('#mailTemplates').html(),
+			before:function(){
+				console.log('before');//载入前回调
+			},
+			after:function(){
+				console.log('after');//关闭后回调
+			},
+			ok:function(){
+				console.log('submitBack');//提交后回调
+			},
+			header:false,
+			panelName:'templatePanel',
+			width:'80%',
+			btnTxt:'Apply',
+		});
+	});
+	
+	
+	//add Link
+	$('#addLinkBtn').on('click',function(){
+		base.panel({
+			title:'add Link',
+			content:$('#mailLink').html(),
+			before:function(){
+				console.log('before');//载入前回调
+			},
+			after:function(){
+				console.log('after');//关闭后回调
+			},
+			ok:function(){
+				console.log('submitBack');//提交后回调
+			},
+		});
+	});
+	
+	
+	
+	var windowStat = true;
+	$('#zoomWindow').on('click',function(){
+		
+		if(windowStat){
+			base.addMask();
+			windowStat = false;
+			$('.mailWindow').addClass('zoomWindow');
+		}else{
+			base.removeMask();
+			windowStat = true;
+			$('.mailWindow').removeClass('zoomWindow');
+		}
+		
+	});
+	
+	$('#inBoxUser').keyup(function(){
+		$('.autoUser').show();
+	});
+	
+	$('#inBoxUser').blur(function(){
+		$('.autoUser').hide();
+	});
+	
+	
+	$('.deleteEvent').on('click',function(){
+		$(this).parent().remove();
+	});
+	
+	
+	$('#minWindow').on('click',function(){
+		$('.window').toggleClass('minWindow');
+	});
+	
+	$('.openWindow').on('click',function(){
+		$('.window').removeClass('minWindow');
+	});
+</script>
+<!-- add -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

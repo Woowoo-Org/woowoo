@@ -1,0 +1,49 @@
+.keyframes(sliderInRight,{
+	from{.transform(translateX(100%));visibility:visible;}
+	to{.transform(translateX(0));}
+});
+.keyframes(sliderOutRight,{
+	from{.transform(translateX(0));}
+	to{visibility:hidden;.transform(translateX(100%));}
+});
+.keyframes(fadeIn,{
+	from{visibility:visible;.opacity(0);}
+	to{.opacity(100);}
+});
+.keyframes(fadeOut,{
+	from{.opacity(100);}
+	to{visibility:hidden;.opacity(0);}
+});
+
+.keyframes(sliderInDown,{
+	from{.transform(translateY(100%));visibility:visible;}
+	to{.transform(translateY(0));}
+});
+
+.keyframes(sliderOutDown,{
+	from{.transform(translateY(0));}
+	to{.transform(translateY(100%));visibility:visible;}
+});
+
+
+.sliderInDown{
+	.animation(sliderInDown .4s ease both);
+}
+.sliderOutDown{
+	.animation(sliderOutDown .4s ease both);
+}
+
+.fadeIn{
+	.animation(fadeIn .4s ease both);
+}
+.fadeOut{
+	.animation(fadeOut .4s ease both);
+}
+.sliderOutRight{
+	.animation(sliderOutRight .4s ease both);
+}
+.sliderInRight{
+	.animation(sliderInRight .4s ease both);
+}
+
+

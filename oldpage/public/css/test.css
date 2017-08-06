@@ -1,0 +1,25 @@
+@-webkit-keyframes sliderRight {
+  from {
+    visibility: visible;
+  }
+}
+@-moz-keyframes sliderRight {
+  from {
+    visibility: visible;
+  }
+}
+@-ms-keyframes sliderRight {
+  from {
+    visibility: visible;
+  }
+}
+@-o-keyframes sliderRight {
+  from {
+    visibility: visible;
+  }
+}
+@keyframes sliderRight {
+  from {
+    visibility: visible;
+  }
+}

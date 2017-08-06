@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Mail</title>
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" id="viewport" name="viewport">
+	<meta content="telephone=no,email=no" name="format-detection" />
+	<link rel="stylesheet" href="public/stylesheets/doc/style.css" />
+</head>
+<body>
+	<div class="header">
+		<div class="headTool">
+			<a class="search" id="searchTo"><i class="material-icons">search</i></a>
+			<a class="woowoo"><i class="material-icons">pets</i></a>
+			<a class="reminder"><i class="material-icons">notifications</i></a>
+			<a class="mail active"><i class="material-icons">markunread</i><s class="msgMark"></s></a>
+			<a>ChongW.yan</a>
+			<a class="chat" id="messageWindow"><i class="material-icons">message</i></a>
+		</div>
+	</div>
+	<div class="siderBar">
+		<ul class="nav">
+			<li>
+				<a href="index.html"><i class="material-icons">home</i></a>
+			</li>
+			<li class="active">
+				<a href="Calender.html"><i class="material-icons">event_note</i></a>
+			</li>
+			<li>
+				<a href="Employee.html"><i class="material-icons">assignment_ind</i></a>
+			</li>
+			<li>
+				<a href="Patients.html"><i class="material-icons">people</i></a>
+			</li>
+			<li>
+				<a href="DraftRecords.html"><i class="material-icons">description</i></a>
+			</li>
+			<li>
+				<a href="Settings.html"><i class="material-icons">settings</i></a>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="mailPage">
+		<div class="mailSider">
+			<div class="mailHead">
+			<div class="headLeft">
+				<a class="mailStore"><i class="material-icons">inbox</i></a>
+				<h2>Inbox</h2>
+			</div>
+			<div class="mailHeadBar">
+				<a class="editMail" id="newMail" title="Creat"><i class="material-icons">edit</i></a>
+			</div>
+			
+			
+		</div>
+			
+			<div class="mailsiderCont">
+				<div class="mailList" style="display:none">
+<!--
+					<div class="mailSearch">
+				    <input type="text" />
+						<a class="searchBtn"><i class="material-icons">search</i></a>
+					</div>
+-->
+					<div class="list" id="showMailList">
+						<a class="active"><img src="public/images/userimg.png" alt="" /><b>KarMing Tam</b><span class="time">7:00pm</span></a>
+						<a><span class="groupimg">5</span><b>Elizabeth Meyer </b><span class="time">8:10pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">9:20pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Patrick Herra  &  Randy Munoz  &  Melissa Lawrence  &  Kimberly Murphy</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">14:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">12:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+					</div>
+				</div>
+				<div class="mailList">
+					<!--
+<div class="mailSearch">
+				    <input type="text" />
+						<a class="searchBtn"><i class="material-icons">search</i></a>
+					</div>
+-->
+					<div class="list"  id="docList">
+					<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b>Elizabeth Meyer </b><span class="time">10:00pm</span></a>
+						<a><img src="public/images/userimg.png" alt="" /><b> Elizabeth Meyer</b> <span class="time">10:00pm</span></a>
+					</div>
+				</div>
+			</div>
+			<div class="mailGroup">
+				<div class="mailDropMenu" id="mailDropMenu">
+					<a href=""><i class="material-icons">send</i>Sent Messages</a>
+					<a href=""><i class="material-icons">drafts</i>Draft</a>
+					<a href=""><i class="material-icons">delete</i>Trash</a>
+					<a href=""><i class="material-icons">settings</i>Message Settings</a>
+				</div>
+				<div class="mailCat">
+					<a class="active"><i class="material-icons">supervisor_account</i> <s></s></a>
+					<a><i class="ico-doctor"></i></a>
+					<a><i class="material-icons">store</i></a>
+					<a><i class="material-icons">loyalty</i></a>
+				</div>
+			</div>
+			
+			<!--
+<div class="inboxNav">
+				<a>Send</a>
+				<a>Draft</a>
+				<a>Trash</a>
+				<a>Message Setting</a>
+			</div>
+-->
+			<!--
+				<div class="seletPanel">
+				<a href="">Reply</a>
+				<a href="">Forward</a>
+				<a href="">Print</a>
+				<a href="">Delete this message</a>
+				<a href="">Mark unread</a>
+				<a href="">Translate</a>
+			</div>
+-->
+		</div>
+		<div class="mailContent" id="mailContainer">
+			<div class="mailDdetail">
+			<div class="mailcontHead">
+				<div class="headLeft">
+					<div class="checkBoxUi blackUi">
+					<input type="checkbox" id="Holidays221s"><label for="Holidays221s"></label>
+					</div>
+<!-- 					<i class="material-icons">arrow_drop_down</i> -->
+				</div>
+				<div class="mailHeadBar">
+		<!--
+					<a class="delEdit"><i class="material-icons">delete_forever</i></a>
+					<a><i class="material-icons">message</i></a>
+		-->
+					<a><i class="material-icons">create</i></a>
+				</div>
+			</div>	
+			<!--
+			<div class="postBar mailSearch">
+		   		<input type="text"/>
+				<a class="searchBtn"><i class="material-icons">search</i></a>
+			</div>
+-->
+			<div class="mailListCont">
+				<ul class="mailTableList" id="mailingList1">
+					<li class="active">
+					<div class="checkBoxUi">
+					<input type="checkbox" id="Holidays221"><label for="Holidays221"></label>
+					</div>
+						<a>
+						<i class="material-icons repyIco">reply</i>
+						<b>Refill Request</b>
+						<span>12 h</span>
+						<em>Hi Doctor Chong Wong Yip,ally did I conceive of my situation then, that…</em>	
+						</a>
+					</li>
+					<li>
+					<div class="checkBoxUi">
+						<input type="checkbox" id="Holidays224"><label for="Holidays224"></label>
+					</div>
+					<a>
+						<b>Refill Request (2)</b>
+						<span>1O tc</span>
+						<em>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum b…</em>
+						<i class="material-icons attIco">attachment</i>
+					</a>
+					</li>
+					
+					<li>
+					<div class="checkBoxUi">
+						<input type="checkbox" id="Holidays2241"><label for="Holidays2241"></label>
+					</div>
+					<a>
+						<b>Refill Request (2)</b>
+						<span>1O tc</span>
+						<em>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum b…</em>
+						<i class="material-icons attIco">attachment</i>
+					</a>
+					</li>
+					
+				</ul>
+				
+			</div>
+			<div class="mailViewCont" id="mailViewCont">
+				<!-- 邮件详情 样式1 -->
+				<div class="mailBodyCont">
+					<div class="mailItem">
+						<div class="mailItemHead">
+					<h1>
+					<b>Refill Request</b>
+					<span>to me</span></h1>
+					<i class="time"><em>10:08</em> 01/10/16</i>
+					<div class="rightBar">
+					
+					 <a class="messageTool"><i class="material-icons">more_vert</i></a>
+					 <div class="seletPanel">
+						<a class="replyBtn">Reply</a>
+						<a class="forwardBtn">Forward</a>
+						<a class="PrintBtn">Print</a>
+						<a class="deleteBtn">Delete this message</a>
+						<a class="markBtn">Mark unread</a>
+						<a class="translateBtn">Translate</a>
+					 </div>
+					</div>
+					</div>
+						<div class="itmeBody">
+							<div class="bodyMsg">
+						<p>Hi Doctor Chong Wong Yip,</p>
+						<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et sit amet mauris. Suspendisse felis sem, condimentum ullamcorper est sit amet, molestie mollis nulla. Etiam lorem orci, consequat ac magna quis, facilisis vehicula neque.</p>
+						<p>Thanks!</p>
+						</div>
+							
+						</div>
+						<div class="mailItemBar">
+							<div class="userInfo">
+								<h2>Elizabeth Mayer</h2>
+								<img src="public/images/userimg.png">
+							</div>
+						</div>
+					</div>
+					
+					<div class="mailItem">
+						<div class="mailItemHead">
+						<h1>
+						Refill Request
+						<span>to Elizabeth Mayer</span></h1>
+						<i class="time"><em>10:08</em>  01/10/16</i>
+						<div class="rightBar">
+						
+						 <a class="messageTool">
+						 	<i class="material-icons">more_vert</i></a>
+						 <div class="seletPanel">
+							<a class="replyBtn">Reply</a>
+							<a class="forwardBtn">Forward</a>
+							<a class="PrintBtn">Print</a>
+							<a class="deleteBtn">Delete this message</a>
+							<a class="markBtn">Mark unread</a>
+							<a class="translateBtn">Translate</a>
+						 </div>
+						</div>
+						</div>
+						<div class="itmeBody">
+							<div class="bodyMsg">
+								<p>Hi Elizabeth,</p>
+								<p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa placerat, at vestibulum nisl egestas. Nullam rhoncus lacus non odio luctus, eu condimentum mauris ultrices. Praesent blandit, augue a posuere aliquam, arcu tortor feugiat turpis, quis lacinia augue sapien at tellus. Cras ut erat magna. Morbi nibh ante, condimentum vestibu.</p>
+								<p>Feel free to contact me anytime!</p>
+								<p>Have a good day!</p>
+								<p>Chong Wong Yip</p>
+							</div>
+						</div>
+						<div class="mailItemBar">
+							<div class="userInfo">
+								<h2>Elizabeth Mayer</h2>
+								<img src="public/images/userimg.png">
+							</div>
+						</div>
+					</div>
+					
+					<div class="moreContainer">
+					<p>No more conversation</p>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+			<!--
+<div class="editMailPage">
+				<div class="mailcontHead">
+					<h2>New Message</h2>
+					<a class="delEdit fr"><i class="material-icons">delete_forever</i></a>
+				</div>
+				<div class="toHead">
+					<div class="line">
+						<label for="">to</label>
+						<input type="text" placeholder="Elizabeth Maye,YongWang" />
+					</div>
+					<div class="line">
+						<input type="text" placeholder="Subject" />
+					</div>
+				</div>
+				<div class="toBody">
+					<textarea name="" rows="" cols="" placeholder="Mail content"></textarea>
+				</div>
+			</div>
+-->	
+			<!--
+<div class="postPage">
+				<div class="mailcontHead">
+					<a class="fl"><i class="material-icons">person</i></a>
+					<h2>Elizabeth Mayer (1)</h2>
+					<div class="icoTool">
+						<a href=""><i class="material-icons">delete</i></a>
+						<a href=""><i class="material-icons">reply</i></a>
+						<a><i class="material-icons">arrow_drop_down</i></a>
+					</div>
+				</div>
+				<div class="postBar">
+					<a href=""><i class="material-icons">keyboard_backspace</i>Back to All</a>
+				</div>
+				<div class="postBody">
+					<sub class="time">1:05pm   <span>11/29/15</span></sub>
+					<h1>Refill Request</h1>
+					<p>Hi Doctor Chong Wong Yip,</p>
+					<br />
+					<br />
+					<br />
+					<p>Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec pharetra id, tempor a tortor. Pellentesque non dignissim neque. Ut porta viverra est, ut dignissim elit elementum ut. Nunc vel rhoncus nibh, ut tincidunt turpis. Integer ac enim pellentesque, adipiscing metus id, pharetra odio. Donec bibendum nunc sit amet tortor scelerisque luctus et sit amet mauris. Suspendisse felis sem, condimentum ullamcorper est sit amet, molestie mollis nulla. Etiam lorem orci, consequat ac magna quis, facilisis vehicula neque.</p>
+Thanks!
+				</div>
+				
+				
+			</div>
+			<div class="repyPage">
+				<div class="toHead">
+					<div class="line">
+						<label for="">to</label>
+						<input type="text" placeholder="Elizabeth Maye,YongWang" />
+					</div>
+					
+				</div>
+				
+				<div class="reBody">
+					<div class="postBody">
+						<h1>Hi Elizabeth,</h1>
+						<br />
+						<br />
+						<br />
+					<p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa placerat, at vestibulum nisl egestas. Nullam rhoncus lacus non odio luctus, eu condimentum mauris ultrices. Praesent blandit, augue a posuere aliquam, arcu tortor feugiat turpis, quis lacinia augue sapien at tellus. Cras ut erat magna. Morbi nibh ante, condimentum vestibu.</p>
+					<p>Feel free to contact me anytime!</p>
+					<p>Have a good day!</p>
+					<p>Chong Wong Yip</p>
+					</div>
+					
+					<div class="toBody">
+						<textarea name="" rows="" cols="" placeholder="putin"></textarea>	
+					</div>
+				</div>
+				<div class="reBar">
+					<div class="icoTool icoLeft">
+						<a href=""><i class="material-icons">web</i></a>
+						<a href=""><i class="material-icons">reply_all</i></a>
+					</div>
+					<a class="sendBtn"><i class="material-icons">send</i></a>
+				</div>
+			</div>
+-->
+
+		</div>
+		
+	</div>
+	<div class="searchPage" id="searchPage">
+		<div class="searchHead">
+			<div class="searForm">
+				<input type="text" class="searchInput" id="searchInput" /><a class="searchBtn"><i class="material-icons">search</i></a>
+				<span>Enter your search above</span>
+			</div>
+			
+			<a class="closeSearch"><i class="material-icons">clear</i></a>
+		</div>
+	</div>
+	<script src="public/javascripts/jquery.min.js"></script>
+	<script src="public/javascripts/index.js"></script>
+	<script>
+		$(document).on('click','.closeBtn',function(){
+			$('.window').remove();
+			$('.mailWindowContainer').remove();
+		});
+	</script>
+</body>
+</html>
