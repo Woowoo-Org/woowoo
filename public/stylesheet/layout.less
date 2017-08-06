@@ -11,7 +11,6 @@ body{
 	right:0;
 	z-index:10;
 	&-logo{
-		
 		a{
 			display:block;
 			width:@headheight;
@@ -42,8 +41,6 @@ body{
 			&:after{
 				border:8px solid transparent;content:'';border-bottom-color:#fff;position:absolute;right:18px;top:-16px;
 			}
-			
-			
 			.img{margin-right:15px;
 					img{width:40px;height:40px;border-radius:90px;}
 				}
@@ -113,9 +110,6 @@ body{
 			line-height:@headheight;
 			&.active{
 				background:@c1;
-			a{
-				
-			}
 			}
 			
 		}
@@ -135,15 +129,103 @@ body{
 			margin-left:220px;
 		}
 	}
+	&-set{
+		
+	}
+}
+.set{
+	&-title{
+		font-size:18px;
+		padding:12px 0;
+		border-bottom:1px solid @ce;
+		a{
+			color:@red;
+		}
+	}
+	&-menu{
+		a{
+			padding:12px 0;
+			display:block;
+		}
+		li{
+			position:relative;
+			border-bottom:1px solid @ce;
+			&>a{
+				color:@c4;
+				cursor:pointer;
+				.anm();
+				position:relative;
+				&:hover{
+					color:@blue;
+				}
+				
+			}
+			
+			&:after{
+				content:'';
+				width:7px;
+				height:7px;
+				display:block;
+				border:1.5px solid lighten(@c9,20%);
+				border-left:none;
+				border-bottom:none;
+				.transform(rotate(45deg));
+				position:absolute;right:0;
+				top:15px;
+				
+			}
+			&.active{
+				&>a{
+					color:@red;
+				}
+			}
+			&.open{
+				&>a{
+					color:@red;
+				}
+				&:after{
+					.transform(rotate(135deg));
+				}
+				
+				ul{
+					display:block;
+				}
+			}
+			&:last-child{
+				border:none;
+			}
+		}
+		ul{
+			position:relative;
+			display:none;
+			li{
+				padding-left:20px;
+				border:none;
+				&>a{color:@c8;}
+				&:after{
+					border:none;
+				}
+			}
+			&.open{
+				display:block;
+			}
+		}
+	}
 }
 .pagecont{
 	margin-left:@headheight + 20px;margin-right:20px;margin-top:20px;position:relative;
 	&-siderbar{
-		width:200px;
+		width:240px;
 		float:left;
+		background:#fff;
+
+		padding:20px;
+		position:fixed;bottom:0;left:@headheight;right:0;top:@headheight;
+		box-shadow:2px 0px 32px rgba(0, 0, 0, 0.1);
+		z-index:10;
 	}
 	&-content{
-		margin-left:220px;
+		margin-left:250px;
 	}
 // 	.transition(.4s);
 }
