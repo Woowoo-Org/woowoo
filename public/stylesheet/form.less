@@ -221,7 +221,7 @@ textarea{
 		left:0;
 		right:0;
 		top:100%;
-		z-index:999;
+		z-index:8;
 		background:#fff;
 		border:1px solid @blue;
 		margin-top:-1px;
@@ -234,6 +234,80 @@ textarea{
 			background:@blue;
 			color:#fff;
 		}
+	}
+}
+.password{
+	&-bar{
+		width:200px;
+		height:10px;
+		position:relative;
+		background:@ce;
+		margin-right:10px;
+		b{
+			justify-content:space-between;
+			display:block;float:left;
+			font-size:11px;
+			color:#fff;
+		}
+		&:after,
+		&:before{
+			content:'';
+			position:absolute;
+			top:0;
+			bottom:0;
+			width:1px;left:33.33%;
+			background:#fff;
+			display:block;
+			z-index:10;
+		}
+		&:after{
+			left:66%;
+		}
+		
+	}
+	&-level{
+		width:300px;
+		display:flex;
+		align-items:center;
+		margin-bottom:20px;
+		margin-top:-10px;
+		s{
+			position:absolute;
+			left:0;top:0;bottom:0;
+		}
+		.week{
+			s{
+			width:33.333333%;background:red;
+		}
+		}
+		.fair{
+			s{
+			width:66.333333%;background:orange;
+		}
+		}
+		.strong{
+			s{
+			width:100%;background:green;
+		}
+		}	
+		b{
+			color:@c9;
+		}
+	}
+	
+	
+}
+.col{
+	overflow:hidden;
+	&:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	&-two{
+		.col{
+			width:49%;.inline-block();
+		}	
 	}
 }
 .selectbox{
@@ -356,13 +430,14 @@ textarea{
 
 .title{
 	&-sub{
-		font-size:14px;
+		font-size:12px;
 		line-height:1.5;
 		margin-bottom:20px;
+		color:@blue;
 	}
 	&-prompt{
 		font-size:12px;
-		color:@c6;
+		color:@c9;
 		line-height:1.6;
 	}
 	

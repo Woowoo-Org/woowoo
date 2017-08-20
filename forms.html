@@ -160,7 +160,18 @@
        <i>password</i>
        <input class="input validate[required,minSize[6],maxSize[20]]" type="password" id="pwd" /> 
        
-	   <a class="button">this is a Button</a>
+      </div>
+      <div class="password-level">
+	      
+		  	<!-- week fair strong -->
+	      <div class="password-bar fair">
+		      <s></s>
+	      </div>
+	      <b>Fair</b>
+      </div>
+      <div class="fgroup"> 
+       <i>Confirm password</i>
+       <input class="input validate[condRequired[pwd],equals[pwd]]" type="password" />
       </div>
       <div class="fgroup"> 
 	       <div class="fgroup-inline">
@@ -183,10 +194,7 @@
 	      <i>address</i>
 	      <textarea name="" rows="" cols="" placeholder=""></textarea>
       </div>
-      <div class="fgroup"> 
-       <i>Confirm password</i>
-       <input class="input validate[condRequired[pwd],equals[pwd]]" type="password" />
-      </div>
+      
       
       <div class="fgroup"> 
        <i>Auto filed</i>
@@ -265,150 +273,294 @@
        <div class="formtitle">Office Hours (工作时间)</div>
        
        
-       <div class="col">
-	       
-		    <div class="title-sub">
-		       Office Hours (工作时间)
-		       <div class="title-prompt">Days and hours you accept new appintments.</div>
-	       	</div>
-	       	<div class="time-block">
-        	<div class="fgroup">
-	        	<div class="ui-switche">
-		        	<input type="checkbox" id="cus" />
-		        	<label for="cus">Monday</label>
-	        	</div>
-	        	
-	        	<div class="fgroup-inline time-group">
-	        		<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-			       	 <div class="fgroup-inline-text">to</div>
-			       	<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-	        	</div>
-        	</div>
-        	
-        	<div class="fgroup">
-	        	<div class="ui-switche">
-		        	<input type="checkbox" id="cus" />
-		        	<label for="cus">Tuesday</label>
-	        	</div>
-	        	
-	        	<div class="fgroup-inline time-group">
-	        		<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-			       	 <div class="fgroup-inline-text">to</div>
-			       	<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-	        	</div>
-        	</div>
-        	
-        	<div class="fgroup">
-	        	<div class="ui-switche">
-		        	<input type="checkbox" id="cus" />
-		        	<label for="cus">Wednesday</label>
-	        	</div>
-	        	
-	        	<div class="fgroup-inline time-group">
-	        		<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-			       	 <div class="fgroup-inline-text">to</div>
-			       	<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-	        	</div>
-        	</div>
-        	
-        	<div class="fgroup">
-	        	<div class="ui-switche">
-		        	<input type="checkbox" id="cus" />
-		        	<label for="cus">Thursday</label>
-	        	</div>
-	        	
-	        	<div class="fgroup-inline time-group">
-	        		<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-			       	 <div class="fgroup-inline-text">to</div>
-			       	<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-	        	</div>
-        	</div>
-        	
-        	<div class="fgroup">
-	        	<div class="ui-switche">
-		        	<input type="checkbox" id="cus" />
-		        	<label for="cus">Friday</label>
-	        	</div>
-	        	
-	        	<div class="fgroup-inline time-group">
-	        		<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-			       	 <div class="fgroup-inline-text">to</div>
-			       	<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-	        	</div>
-        	</div>
-        	
-        	<div class="fgroup">
-	        	<div class="ui-switche">
-		        	<input type="checkbox" id="cus" />
-		        	<label for="cus">Saturday</label>
-	        	</div>
-	        	
-	        	<div class="fgroup-inline time-group">
-	        		<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-			       	 <div class="fgroup-inline-text">to</div>
-			       	<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-	        	</div>
-        	</div>
-        	
-        	<div class="fgroup">
-	        	<div class="ui-switche">
-		        	<input type="checkbox" id="cus" />
-		        	<label for="cus">Sunday</label>
-	        	</div>
-	        	
-	        	<div class="fgroup-inline time-group">
-	        		<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-			       	 <div class="fgroup-inline-text">to</div>
-			       	<div class="input-group-right">
-					   <input class="input" type="text">
-					   <div class="button">AM</div>
-			       	</div>
-	        	</div>
-        	</div>
-        	
-        </div>	
-        	
+       <div class="col-two">
+       	<div class="col">
+       		       
+       			    <div class="title-sub">
+       			       Office Hours (工作时间)
+       			       <div class="title-prompt">Days and hours you accept new appintments.</div>
+       		       	</div>
+       		       	<div class="time-block">
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cus" />
+       			        	<label for="cus">Monday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cus1" />
+       			        	<label for="cus1">Tuesday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cus2" checked/>
+       			        	<label for="cus2">Wednesday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cus3" />
+       			        	<label for="cus3">Thursday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cus4" />
+       			        	<label for="cus4">Friday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cus5" />
+       			        	<label for="cus5">Saturday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cus6" />
+       			        	<label for="cus6">Sunday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 </div>	
+       	 	
+       	</div>
+       		   <div class="col">
+       		       
+       			    <div class="title-sub">
+       			      Out-of Office Hours（休息时间）
+       			       <div class="title-prompt">Days and hours you DO NOT accept new appintments.</div>
+       		       	</div>
+       		       	<div class="time-block">
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cuss" />
+       			        	<label for="cuss">Monday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cus1s" />
+       			        	<label for="cus1s">Tuesday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cus2s" checked/>
+       			        	<label for="cus2s">Wednesday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cus3s" />
+       			        	<label for="cus3s">Thursday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cus4s" />
+       			        	<label for="cus4s">Friday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cus5s" />
+       			        	<label for="cus5s">Saturday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 	<div class="fgroup">
+       		        	<div class="ui-switche">
+       			        	<input type="checkbox" id="cus6s" />
+       			        	<label for="cus6s">Sunday</label>
+       		        	</div>
+       		        	
+       		        	<div class="fgroup-inline time-group">
+       		        		<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       				       	 <div class="fgroup-inline-text">to</div>
+       				       	<div class="input-group-right">
+       						   <input class="input" type="text">
+       						   <div class="button">AM</div>
+       				       	</div>
+       		        	</div>
+       	 	</div>
+       	 	
+       	 </div>	
+       	 	
+       	</div>
        </div>
-      
        
        
       <div class="formtitle">Insurance Info</div>
@@ -546,7 +698,7 @@
 		  </div>
 		  
 		  <div class="lgroup">
-			  <i> <b class="tag">Add More</b></i>
+			  <i> <b class="button button-min button-green">+Add More</b></i>
 		  </div>
 	  </div>
 	  
