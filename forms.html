@@ -165,7 +165,158 @@
       <div class="fgroup"> 
        <i>Confirm password</i>
        <input class="input validate[condRequired[pwd],equals[pwd]]" type="password" />
-      </div> 
+      </div>
+      <div class="fgroup">
+	      <i>photo</i>
+	     <div class="upfile">
+	      	<div class="upfile-img" style="width:90px;height:90px;">    
+		       <label for="img1">upfile</label>
+		       <input type="file" id="img1" />
+		       <b class="material-icons">add_a_photo</b>	
+      		</div>
+	      </div>
+      </div>
+      
+       
+      <div class="formtitle">Insurance Info</div>
+      
+      <div class="fgroup">
+      <i>Policyholder Name 投保人姓名:</i><input type="text" />
+      </div>
+     <div class="fgroup">
+      	<i>Insurance Company’s Name 保险公司名称:</i><input type="text" />
+      </div>
+      <div class="fgroup">
+      	<i>Insurance Plan 保险计划:</i><input type="text" />
+      </div>
+      <div class="fgroup">
+      	<i>Group Number:</i><input type="text" />
+      </div>
+      
+      <div class="fgroup">
+	      <div class="upfile upfile-grid">
+		      <div class="fgroup">
+		      	<i>Insurance Card Front</i>
+		      		<div class="upfile-img upfile-ok" style="width:180px;height:120px;background:url('http://img.hb.aicdn.com/365fbb683ba881b2ebc1f172997d9046ada5b2e52018f-tdq1Nt_fw658') no-repeat center;background-size:cover">
+		      		      
+			       <label for="img1">upfile</label>
+			       <input type="file" id="img1" />
+			       <b class="material-icons">add_a_photo</b>
+			       <div class="material-icons upfile-delete">clear</div>
+		      	</div>
+		      </div>
+		      
+		      <div class="fgroup">
+			      <i>Insurance Card Back</i>
+		      	<div class="upfile-img"style="width:180px;height:120px;">
+			      	
+			      	<label for="img2">upfile</label>
+			       <input type="file" id="img2" />
+	      			<b class="material-icons">add_a_photo</b>
+		      	</div>
+		      </div>
+	      </div>
+	      
+	    </div>
+      
+      
+      <div class="formtitle">Left Form List information</div> 
+   
+      <div class="lgroup">
+	      <i>Suspected Allergies</i>
+	      <input type="text" placeholder="Suspected" />
+      </div>
+      <div class="lgroup">
+	      
+	      <i>Family History of Allergies & Asthma</i>
+	      <div class="ui-radio"> 
+	        <input type="radio" name="s9" id="radioq1" />
+	        <label for="radioq1">Urinalysis</label> 
+	       </div>
+	       <div class="ui-radio"> 
+	        <input type="radio" name="s9" id="radioq2" />
+	        <label for="radioq2">Allergies</label> 
+	       </div> 
+      </div>
+      <div class="lgroup">
+      	<i>checkbox</i>
+      	<div class="ui-switche">
+			<input type="checkbox" id="bs1">
+			<label for="bs1">Urinalysis</label>		      
+	  	</div>
+      </div>
+      <div class="lgroup">
+	      <i>Cardiovascular</i>
+	      <div class="group-tag">
+		      <div class="tag active">High Blood Pressure</div>
+		      <div class="tag">Angina/Heart Attack</div>
+		      <div class="tag">Cardiac Stent/Bypass</div>
+		      <div class="tag">Cardiac Stent/Bypass</div>
+		      <div class="tag">Peripheral Vascular Disease</div>
+		      <div class="tag">Irregular Heart Beat</div>
+		      <div class="tag">Cardiac Stent/Bypass</div>
+		      <div class="tag">Cardiac Stent/Bypass</div>
+	      </div>
+      </div>
+      <div class="lgroup">
+		<i>Neurological</i>
+      	<div class="group-tag">
+		      <div class="tag">Seizures</div>
+		      <div class="tag">Stroke</div>
+		      <div class="tag">TIA</div>
+		      <div class="tag">Multiple Sclerosis</div>
+		      <div class="tag">Headache/Migraine</div>
+		      <div class="tag active">other</div>
+	      </div>
+      </div>
+      
+      <div class="lgroup">
+      	<i>Surgery</i>
+      	<div class="input-line">
+      		<input type="text" placeholder="Medical Condition name" />
+      		<div class="input-date">
+      			<input type="text" class="datepicker" />
+      			<b class="material-icons">date_range</b>
+      		</div>
+  		</div>
+      	<div>
+	      	<a href="" class="button button-green button-min">+ Add More Surgery </a>
+      	</div>
+      </div>
+      <div class="formtitle">
+	      Family History
+      </div>
+      <div class="group-tag">
+		  <div class="lgroup">
+		  	<i> <b class="tag active">Asthma</b></i>
+		  	<div class="input-list">
+		  		<div class="input-list-line">
+		  			<input type="text" value="helo" />
+		  		</div>
+		  		<div class="input-list-line">
+		  			<input type="text" />
+		  		</div>
+		  	</div>
+		  	<div><a class="button button-min">+ Add More</a></div>
+		  </div>
+		  <div class="lgroup">
+			  <i> <b class="tag">Chemical Dependency</b></i>
+		  </div>
+		  <div class="lgroup">
+			  <i> <b class="tag">Heart Disease / Stroke</b></i>
+		  </div>
+		  <div class="lgroup">
+			  <i> <b class="tag">High Blood Pressure</b></i>
+		  </div>
+		  <div class="lgroup">
+			  <i> <b class="tag">Cancer</b></i>
+		  </div>
+		  
+		  <div class="lgroup">
+			  <i> <b class="tag">Add More</b></i>
+		  </div>
+	  </div>
+	  
      <div class="formtitle">Personal information
 		<div class="bar-right">
 			<a class="button button-blue">Save project</a>
@@ -184,6 +335,8 @@
        <i>name</i>
        <input class="input validate[required,custom[chinese],minSize[2]]" type="text" id="name" />
       </div> 
+      
+      
       <div class="fgroup fgroup-date"> 
 	       <i>Date of birth</i>
 	       <input class="input validate[required,custom[date]] datepicker" type="text" />
@@ -217,8 +370,11 @@
        <i>Website/blog</i>
        <input class="input validate[required,custom[url]]" type="text" />
       </div>
+      </fieldset> 
+	      
+	      
       <h2 class="formtitle">Account information</h2> 
-	   
+	   <fieldset> 
       <div class="fgroup">
 	      <div class="fgroup-block">
 	       	 <div class="ui-radio"> 
@@ -240,9 +396,9 @@
 	       	</div>
 	       </div> 
       </div>
-      
+      </fieldset> 
       <h2 class="formtitle">Medical Services Available in Clinic</h2> 
-	   
+	   <fieldset> 
       <div class="fgroup">
 	      <div class="fgroup-block">
 	      	<div class="ui-switche">
@@ -257,9 +413,9 @@
 	      </div>
 	      
       </div>
-      
+      </fieldset> 
       <h2 class="formtitle">Medical Services Available in Clinic</h2> 
-	   
+	   <fieldset> 
       <div class="fgroup">
 	      <div class="fgroup-block">
 	      	<div class="ui-checkbox">
@@ -309,8 +465,9 @@
       
       
      </fieldset> 
-     <fieldset> 
+    
       <h2 class="formtitle">Recipient information</h2> 
+       <fieldset> 
       <div class="fgroup"> 
        <i>In the area</i> 
        <div class="selectbox"> 
@@ -386,8 +543,8 @@
        </div> 
       </div> 
      </fieldset> 
+     <h2 class="formtitle">Other</h2> 
      <fieldset> 
-      <h2 class="formtitle">Other</h2> 
       
       <div class="fgroup"> 
        <i>upfile</i> 
