@@ -161,10 +161,46 @@
        <input class="input validate[required,minSize[6],maxSize[20]]" type="password" id="pwd" /> 
        
 	   <a class="button">this is a Button</a>
-      </div> 
+      </div>
+      <div class="fgroup"> 
+	       <div class="fgroup-inline">
+		       	<i>Appointment Automatic Post</i>
+		       	<input class="input validate[required,custom[chinaZip]]" type="text">
+	       </div>
+	       
+	       <div class="fgroup-inline">
+		       	<i>Number of Patients</i>
+		       	<input class="input validate[required,custom[chinaZip]]" type="text">
+	       </div>
+	       
+	       <div class="fgroup-inline">
+		       	<i>Number of Patients</i>
+		       	<input class="input validate[required,custom[chinaZip]]" type="text">
+	       </div>
+      </div>
+      
+      <div class="fgroup">
+	      <i>address</i>
+	      <textarea name="" rows="" cols="" placeholder=""></textarea>
+      </div>
       <div class="fgroup"> 
        <i>Confirm password</i>
        <input class="input validate[condRequired[pwd],equals[pwd]]" type="password" />
+      </div>
+      
+      <div class="fgroup"> 
+       <i>Auto filed</i>
+       		<div class="select-auto">
+		       <input class="input validate[condRequired[pwd],equals[pwd]]" type="text" />
+		       
+		       <div class="select-option">
+			       <div class="select-line">nsurance Info</div>
+			       <div class="select-line">ead and write access Info</div>
+			       <div class="select-line">SMS text message. Info</div>
+			       <div class="select-line">ead and write access Info</div>
+			       <div class="select-line">SMS text message. Info</div>
+		       </div>
+	       </div>
       </div>
       <div class="fgroup">
 	      <i>photo</i>
@@ -177,6 +213,203 @@
 	      </div>
       </div>
       
+       <div class="formtitle">
+	       Services and Fees (服务与费用)
+       </div>
+       
+       <div class="fgroup">
+	       <i>Range of Consultation Fee (HKD) </i>
+	       <div class="fgroup-inline">
+		       <i>Minimum</i>
+		       <div class="input-group">
+			       <div class="button">$</div>
+		       	<input class="input" type="text">
+		       	</div>
+	       </div>
+	       <div class="fgroup-inline-text">
+		       to
+	       </div>
+	       <div class="fgroup-inline">
+		       <i>Maximum</i>
+		       <div class="input-group">
+			       <div class="button">$</div>
+		       	<input class="input" type="text">
+		       	</div>
+	       </div>
+       </div>
+      <div class="formtitle">
+       	 <div class="formtitle-sub">Medical Services Provided (Tests, Treatments, Procedures and Operations) 提供的医疗服务</div>
+       </div>
+       <div class="fgroup">
+	       <i>Liver Screening</i>
+	       
+	       <div class="fgroup-inline">
+		       <i>Minimum</i>
+		       <div class="input-group">
+			       <div class="button">$</div>
+		       	<input class="input" type="text">
+		       	</div>
+	       </div>
+	       <div class="fgroup-inline-text">
+		       to
+	       </div>
+	       <div class="fgroup-inline">
+		       <i>Maximum</i>
+		       <div class="input-group">
+			       <div class="button">$</div>
+		       	<input class="input" type="text">
+		       	</div>
+	       </div>
+	       
+       </div>
+       <div class="formtitle">Office Hours (工作时间)</div>
+       
+       
+       <div class="col">
+	       
+		    <div class="title-sub">
+		       Office Hours (工作时间)
+		       <div class="title-prompt">Days and hours you accept new appintments.</div>
+	       	</div>
+	       	<div class="time-block">
+        	<div class="fgroup">
+	        	<div class="ui-switche">
+		        	<input type="checkbox" id="cus" />
+		        	<label for="cus">Monday</label>
+	        	</div>
+	        	
+	        	<div class="fgroup-inline time-group">
+	        		<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+			       	 <div class="fgroup-inline-text">to</div>
+			       	<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+	        	</div>
+        	</div>
+        	
+        	<div class="fgroup">
+	        	<div class="ui-switche">
+		        	<input type="checkbox" id="cus" />
+		        	<label for="cus">Tuesday</label>
+	        	</div>
+	        	
+	        	<div class="fgroup-inline time-group">
+	        		<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+			       	 <div class="fgroup-inline-text">to</div>
+			       	<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+	        	</div>
+        	</div>
+        	
+        	<div class="fgroup">
+	        	<div class="ui-switche">
+		        	<input type="checkbox" id="cus" />
+		        	<label for="cus">Wednesday</label>
+	        	</div>
+	        	
+	        	<div class="fgroup-inline time-group">
+	        		<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+			       	 <div class="fgroup-inline-text">to</div>
+			       	<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+	        	</div>
+        	</div>
+        	
+        	<div class="fgroup">
+	        	<div class="ui-switche">
+		        	<input type="checkbox" id="cus" />
+		        	<label for="cus">Thursday</label>
+	        	</div>
+	        	
+	        	<div class="fgroup-inline time-group">
+	        		<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+			       	 <div class="fgroup-inline-text">to</div>
+			       	<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+	        	</div>
+        	</div>
+        	
+        	<div class="fgroup">
+	        	<div class="ui-switche">
+		        	<input type="checkbox" id="cus" />
+		        	<label for="cus">Friday</label>
+	        	</div>
+	        	
+	        	<div class="fgroup-inline time-group">
+	        		<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+			       	 <div class="fgroup-inline-text">to</div>
+			       	<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+	        	</div>
+        	</div>
+        	
+        	<div class="fgroup">
+	        	<div class="ui-switche">
+		        	<input type="checkbox" id="cus" />
+		        	<label for="cus">Saturday</label>
+	        	</div>
+	        	
+	        	<div class="fgroup-inline time-group">
+	        		<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+			       	 <div class="fgroup-inline-text">to</div>
+			       	<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+	        	</div>
+        	</div>
+        	
+        	<div class="fgroup">
+	        	<div class="ui-switche">
+		        	<input type="checkbox" id="cus" />
+		        	<label for="cus">Sunday</label>
+	        	</div>
+	        	
+	        	<div class="fgroup-inline time-group">
+	        		<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+			       	 <div class="fgroup-inline-text">to</div>
+			       	<div class="input-group-right">
+					   <input class="input" type="text">
+					   <div class="button">AM</div>
+			       	</div>
+	        	</div>
+        	</div>
+        	
+        </div>	
+        	
+       </div>
+      
+       
        
       <div class="formtitle">Insurance Info</div>
       

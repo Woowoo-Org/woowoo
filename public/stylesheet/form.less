@@ -211,7 +211,31 @@ textarea{
 		z-index:1;
 	}
 }
-
+.select{
+	&-auto{
+		position:relative;
+		.inline-block();
+	}
+	&-option{
+		position:absolute;
+		left:0;
+		right:0;
+		top:100%;
+		z-index:999;
+		background:#fff;
+		border:1px solid @blue;
+		margin-top:-1px;
+		cursor:pointer;
+		color:@c5;
+	}
+	&-line{
+		padding:8px 15px;
+		&:hover{
+			background:@blue;
+			color:#fff;
+		}
+	}
+}
 .selectbox{
 	border:1px solid darken(@ce,5%);
 	.inline-block();
@@ -300,6 +324,12 @@ textarea{
 			top:50%;
 			margin-top:-15px;
 		}
+		&-subs{
+			font-size:14px;
+			color:@c6;
+			display:block;
+			margin-bottom:20px;
+		}
 	}
 	
 	
@@ -313,19 +343,30 @@ textarea{
 	input[type='email'],
 	input[type='date'],
 	input[type='password'],
+	textarea,
 	.selectbox{
 		width:500px;
 	}
-
-	.inputgroup{
-		position:relative;
-		input[type='text']{border-radius:2px 0 0 2px;}
-		input:focus{z-index:14;}
-		.btn{border-radius:0 2px 2px 0;margin-left:-1px;position:relative;z-index:1;}
+	textarea{
+		min-height:100px;
 	}
+
 
 }
 
+.title{
+	&-sub{
+		font-size:14px;
+		line-height:1.5;
+		margin-bottom:20px;
+	}
+	&-prompt{
+		font-size:12px;
+		color:@c6;
+		line-height:1.6;
+	}
+	
+}
 .lgroup{
 	position:relative;
 	margin-bottom:25px;
@@ -360,6 +401,44 @@ textarea{
 	}	
 }
 .input{
+	&-group{
+		position:relative;
+		font-size:0;
+		.inline-block();
+		input[type='text']{
+			border-radius:0 2px 2px 0;
+			font-size:12px;
+			margin-left:-1px;
+			position:relative;
+			z-index:2;
+		}
+		input:focus{
+			z-index:14;
+		}
+		.button{
+			border-radius:2px 0 0 2px;
+			padding:8px 10px;
+		}
+		&-right{
+			font-size:0;
+			.inline-block();
+			input[type='text']{
+				border-radius:2px 0 0 2px;
+				font-size:12px;
+				margin-left:-1px;
+				position:relative;
+				z-index:2;
+			}
+			.button{
+			border-radius:0 2px 2px 0;
+				padding:8px 10px;
+				margin-left:-1px;
+			}
+			&+.fgroup-inline-text{
+				margin:0 20px;
+			}
+		}
+	}
 	&-line{
 		margin-bottom:20px;
 	}
@@ -464,6 +543,7 @@ textarea{
 		input[type='email'],
 		input[type='date'],
 		input[type='password'],
+		textarea,
 		.selectbox{
 			width:151px;
 		}
@@ -471,6 +551,11 @@ textarea{
 			display:block;
 			font-size: 12px;
 		    margin-bottom: 8px;
+		}
+		&-text{
+			.inline-block();
+			margin-left: -10px;
+			margin-right: 10px;
 		}
 	}
 	&-block{
@@ -625,4 +710,18 @@ textarea{
 	.button{
 		border-radius:0 2px 2px 0;margin-left:-1px;position:relative;z-index:2;
 	}
+}
+.time{
+	&-group{
+		.inline-block();
+		input[type='text']{
+			width:100px;
+		}
+	}
+	&-block{
+		.ui-switche{
+			width:120px;
+		}
+	}
+	
 }
