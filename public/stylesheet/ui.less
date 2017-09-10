@@ -39,7 +39,6 @@
 				display:block;
 			}
 		}
-		
 	}
 	
 	&-radio{
@@ -146,6 +145,36 @@
 						background:lighten(@red,32%);
 					}
 				}
+			}
+		}
+		&-toggle{
+			position:relative;
+			padding:0 30px;
+			
+			input[type='checkbox'],
+			input[type='radio']{
+				&+label{
+					font-size:0 !important;
+					position:relative;
+					height:18px;
+					width:100%;
+				}
+			}
+			&:after,&:before{
+				content:'';
+				position:absolute;
+				line-height:18px;
+				top:0;
+				color:#444;
+			}
+			&:after{
+				content: 'yes';
+				right:-30px;
+				
+			}
+			&:before{
+				content: 'no';
+				left:0;
 			}
 		}
 	}
